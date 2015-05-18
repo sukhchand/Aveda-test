@@ -1,5 +1,7 @@
 four51.app.controller('CategoryCtrl', ['$routeParams', '$sce', '$scope', '$451', 'Category', 'Product', 'Nav',
 function ($routeParams, $sce, $scope, $451, Category, Product, Nav) {
+	
+	console.log($scope.User);
 	$scope.productLoadingIndicator = true;
 	$scope.settings = {
 		currentPage: 1,
