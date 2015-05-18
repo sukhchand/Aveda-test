@@ -3,7 +3,7 @@ function ($scope, $sce, $route, User) {
 	var codes = ['PasswordSecurityException'];
 
 	$scope.loginMessage = null;
-	$scope.buttonText = "Logon";
+	$scope.buttonText = "LOGIN";
 	$scope.$on('event:auth-loginFailed', function(event, message) {
 		$scope.loginMessage = message;
 	});

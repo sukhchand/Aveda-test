@@ -4,7 +4,68 @@ Theme name: My SPA Theme
 Version: 1.0
 Template: Howdy
 */
-
+body{
+	margin: 0;
+}
 .LPMcontainer {
     visibility: hidden;
+}
+.container{
+  padding: 0;
+}
+.order-cloud{
+  padding: 0px;
+}
+.LogoSection{
+  background: #9ea616;
+  padding: 23.1% 0;
+}
+.LogoSection img{
+	margin: 0 auto;
+}
+.order-cloud .form-signin{
+	padding: 23% 0;
+	margin: 0 auto;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	width: 50%;
+	max-width: 50%;
+}
+.order-cloud h2{
+	color: #9ea616;
+	-webkit-animation:none;
+}
+.login_tab{
+	text-align: center;	
+}
+.login_tab a{
+	color: #a0a0a4;
+	text-decoration: none;
+}
+.login_tab .tab_active{
+	color: #0c2a3a;
+	padding-bottom: 4px;
+	border-bottom: 2px solid #9ea616;
+}
+.login_tab a{
+	padding: 20px;
+	font-weight: bold;
+}
+.login_icon{
+	background: #d1d1cd;
+	border-radius: 4px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.login_icon#correct{
+	background: #9ea616;
+}
+.login_icon#incorrect{
+	background: #bb1a00;
+}
+.login_btn{
+	background: #9ea616;
+	border-radius: 0;
+	border: none;
 }

@@ -51,7 +51,8 @@ four51.app.factory('$451', ['AppConst', function(AppConst) {
 		isAnon: four51IsAnonUser,
 		apiName : four51.apiName(),
 		api: function(path) {
-            return '/api/' + four51.apiName() + "/" + path;
+            //return '/api/' + four51.apiName() + "/" + path;
+            return "https://avedacorporation.four51ordercloud.com/api/avedatest/" + path;
 		},
 		filter: function(input, options, op) {
 			return json_filter(input, options, op);
