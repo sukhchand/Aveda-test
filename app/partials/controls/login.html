@@ -67,12 +67,8 @@
                 </div>
                 <div class="form_div col-lg-6">
                     <form class="form-signin" ng-submit="login()" name="login_form">
-                        <h2 class="animated fadeIn text-center" ng-show="!showEmailHelp">{{'Login to your account' | r}}</h2>
-                        <h2 class="animated fadeIn text-center" ng-show="showEmailHelp">{{'Forgot your password?' | r}}</h2>
-                        <div class="login_tab">
-                            <a href="#" ng-click="showEmailHelp = false; buttonText = 'Submit'" ng-class="{tab_active : !showEmailHelp }">LOGIN</a>
-                            <a href="#" ng-click="showEmailHelp = true; buttonText = 'Submit'"  ng-class="{tab_active : showEmailHelp }">FORGOT PASSWORD</a>
-                        </div>
+                        <h2 class="animated fadeIn text-center">{{'Login to your account' | r}}</h2>
+                        <div class="login_tab"><a href="#" class="tab_active">LOGIN</a><a href="#">FORGOT PASSWORD</a></div>
                         <p id="451qa_msg_login" ng-show="loginMessage" ng-bind-html="loginMessage" class="alert alert-info"></p>
                         <div>
                             <div class="view-form-icon" ng-show="!showEmailHelp">
@@ -93,13 +89,7 @@
                                     
                                 </div>
                             </div>
-                            <div>
-                                <!-- <p class="alert alert-info" ng-show="showEmailHelp && (!EmailNotFoundException || !PasswordSecurityException)">
-                                    If you would like to be reminded of your {{'Username' | r}} or have the option to reset your {{'Password' | r}}, please provide your email address and your log on information will be emailed to you immediately.
-                                </p> -->
-                                <!-- <btn class="btn btn-info btn-block" ng-show="!showEmailHelp && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">
-                                    Need help logging on?
-                                </btn> -->
+                            <div>                                
                                 <div class="view-form-icon" ng-show="showEmailHelp">
                                     <div class="input-group">
                                         <label ng-show="credentials.Email">{{'Email' | r}}</label>
@@ -107,18 +97,10 @@
                                         <input class="form-control" type="email" ng-model="credentials.Email" placeholder="{{'Email' | r}}" aria-describedby="basic-addon3" />
                                     </div>
                                 </div>
-                                <!-- <btn class="btn btn-info btn-block" ng-show="showEmailHelp" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Logon'">
-                                    Return to logon
-                                </btn> -->
                             </div>
                             <div>
                                 <div class="view-form-icon" ng-show="PasswordSecurityException">
                                     <h2 class="animated fadeIn text-center">{{'Reset your password?' | r}}</h2>
-                                   <!--  <div class="input-group">
-                                        <label ng-show="credentials.CurrentPassword">Current {{'Password' | r}}</label>
-                                        <input class="form-control" name="current_password" type="password" ng-model="credentials.CurrentPassword" placeholder="Current {{'Password' | r}}" />
-                                        <i class="fa fa-lock"></i>
-                                    </div> -->
                                     <div class="input-group">
                                         <label ng-show="credentials.NewPassword">New {{'Password' | r}}</label>
                                         <span class="input-group-addon login_icon" id="basic-addon4"><img src="css/images/password_img.png"></span>
@@ -135,8 +117,8 @@
                             </div>
                             <input ng-disabled="login_form.$invalid" class="btn btn-large btn-primary btn-block login_btn" id="451_btn_login" type="submit" value="{{buttonText}}" />
                         </div>
-                        <!-- <a href="#" ng-show="!showEmailHelp && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">Forgot Password?</a>
- -->                    </form>
+                        <a href="#" ng-show="!showEmailHelp && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">Forgot Password?</a>
+                    </form>
                 </div>
             </div>
         </div>

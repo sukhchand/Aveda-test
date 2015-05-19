@@ -69,3 +69,50 @@ body{
 	border-radius: 0;
 	border: none;
 }
+.main-nav{
+	background: #fff;
+}
+.navigation_div li{
+	text-align: center;
+	border-right: 1px solid #ccc;
+	padding: 10px 5px;
+}
+.navigation_div .dropdown-menu{
+	top: 80%;
+	left: 5px;
+	border-radius: 0;
+}
+.browse_div .sand_icon{
+	color: #9ea616;
+}
+.browse_div .browse_text{
+	margin: 0 5px;
+	font-weight: bold;
+}
+.browse_div .browse_submenu{
+	width: 95%;
+}
+.browse_div .browse_submenu a{
+	color: #000;
+	background-color: #fff;
+}
+.browse_div .browse_submenu li,.navigation_div .search_div .product_type_submenu li,.navigation_div .build_order_div ul li, .navigation_div .user_account_div ul li{
+	display: block;
+	float: none;
+	padding: 10px 0;
+	border:none;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+}
+.browse_div .browse_submenu li:last-child, .navigation_div .search_div .product_type_submenu li:last-child, .navigation_div .build_order_div ul li:last-child, .navigation_div .user_account_div ul li:last-child{
+	border: none;
+}
+.navigation_div .search_div{
+	padding: 10px 30px;
+}
+.navigation_div .build_order_div .dropdown-toggle{
+	background: url('images/build_order.png') no-repeat 20px 0;
+}
+.navigation_div .user_account_div .dropdown-toggle{
+	background: url('images/profile.png') no-repeat 20px 0;
+}
