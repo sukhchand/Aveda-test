@@ -1,13 +1,13 @@
 <header class="header navbar navbar-inner">
-    <nav tolerance='20' offset='200' class="navbar navbar-default navbar-fixed-top" role="navigation" headroom>
-        <div style="background-image:url('css/images/avedaBG.jpg'); text-align:center;">
+    <nav tolerance='20' offset='200' class="navbar navbar-default navbar-fixed-top main-nav" role="navigation" headroom>
+        <!-- <div style="background-image:url('css/images/avedaBG.jpg'); text-align:center;">
             <a style="padding:15px 0;" ng-click="refreshUser()" href="catalog">
                 <img src="css/images/aveda_logo_white.png"/>
             </a>
-        </div>
+        </div> -->
         <section>
             <div class="container">
-                <ul class="nav navbar-nav pull-left">
+                <!-- <ul class="nav navbar-nav pull-left">
                     <li class="back animated fadeInLeft" ng-class="{'ng-hide': isActive('catalog')}">
                         <a href back-step class="back">
                             <i class="fa fa-arrow-left"></i>
@@ -99,15 +99,15 @@
                     <li>
                         <a href='http://server.iad.liveperson.net/hc/30438524/?cmd=file&file=visitorWantsToChat&site=30438524&byhref=1&imageUrl=http://images.liveperson.com/lp/30438524'
                            target='chat30438524'
-                           onClick="javascript:window.open('http://server.iad.liveperson.net/hc/30438524/?cmd=file&file=visitorWantsToChat&site=30438524&imageUrl=http://images.liveperson.com/lp/30438524&referrer='+escape(document.location),'chat30438524','width=472,height=320');return false;" >
+                           onClick="javascript:window.open('http://server.iad.liveperson.net/hc/30438524/?cmd=file&file=visitorWantsToChat&site=30438524&imageUrl=http://images.liveperson.com/lp/30438524&referrer='+escape(document.location),'chat30438524','width=472,height=320');return false;" >-->
                             <!--<img src='http://server.iad.liveperson.net/hc/30438524/?cmd=repstate&site=30438524&channel=web&&ver=1&imageUrl=http://images.liveperson.com/lp/30438524'
                                  name='hcIcon' width=165 height=60 border=0>-->
-                            <i class="fa fa-comments"></i>
+                            <!-- <i class="fa fa-comments"></i>
                             <span class="hidden-xs">Live Chat</span>
                         </a>
                     </li>
-                </ul>
-                <ul class="nav navbar-nav pull-right">
+                    </ul> 
+                    <ul class="nav navbar-nav pull-right">
                     <li class="dropdown hidden-sm hidden-xs">
                         <a class="dropdown-toggle" data-toggle="dropdown">
                             Language
@@ -126,7 +126,63 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+                -->
+                <ul class="nav navigation_div">
+                    <li role="presentation" class="col-lg-2 browse_div">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="sand_icon">
+                                <i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i>
+                            </span>
+                            <span class="text-primary browse_text">BROWSE</span>
+                        </a>
+                        <ul class="dropdown-menu browse_submenu" role="menu">
+                            <li role="presentation" class="active"><a href="#">Categories 1</a></li>
+                            <li role="presentation" class="active"><a href="#">Categories 2</a></li>
+                            <li role="presentation" class="active"><a href="#">Categories 3</a></li>
+                            <li role="presentation" class="active"><a href="#">Categories 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-6 search_div">
+                        <div class="input-group">
+                          <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">PRODUCT TYPE<span class="caret"></span></button>
+                            <ul class="dropdown-menu product_type_submenu" role="menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" aria-label="...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                          </span>
+                        </div>
+                    </li>
+                    <li class="col-lg-2 build_order_div">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Build Order <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul>
+                    </li>
+                    <li class="col-lg-2 user_account_div">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hi, Julia Sosa <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul>
+                    </li>
+                </ul>         
+             </div>
         </section>
     </nav>
 </header>
