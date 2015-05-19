@@ -16,14 +16,13 @@ function ($location, $route, $scope, $451, User) {
     $scope.isActive = function(path) {
         var cur_path = $location.path().replace('/', '');
         var result = false;
-
         if (path instanceof Array) {
             angular.forEach(path, function(p) {
                 if (p == cur_path && !result)
                     result = true;
             });
         }
-        else {
+        else{
             if (cur_path == path)
                 result = true;
         }
