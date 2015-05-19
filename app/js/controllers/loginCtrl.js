@@ -15,6 +15,7 @@ function ($scope, $sce, $route, User) {
 		angular.forEach(codes, function(c) {
 			$scope[c] = null;
 		});
+		//console.log(codes,$scope);
 		User.login($scope.credentials,
 			function(data) {
 				if ($scope.credentials.Email) {

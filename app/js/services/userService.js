@@ -31,6 +31,7 @@ four51.app.factory('User', ['$q', '$rootScope', '$resource', '$451', 'Security',
                 _extend(u);
                 _then(success,u);
                 store.set(_cacheName, u);
+                $rootScope.userGroups = u.Groups;
             });
     }
 

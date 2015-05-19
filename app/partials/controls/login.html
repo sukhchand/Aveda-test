@@ -67,8 +67,12 @@
                 </div>
                 <div class="form_div col-lg-6">
                     <form class="form-signin" ng-submit="login()" name="login_form">
-                        <h2 class="animated fadeIn text-center">{{'Login to your account' | r}}</h2>
-                        <div class="login_tab"><a href="#" class="tab_active">LOGIN</a><a href="#">FORGOT PASSWORD</a></div>
+                        <h2 class="animated fadeIn text-center" ng-show="!showEmailHelp">{{'Login to your account' | r}}</h2>
+                        <h2 class="animated fadeIn text-center" ng-show="showEmailHelp">{{'Forgot your password?' | r}}</h2>
+                        <div class="login_tab">
+                            <a href="#" ng-click="showEmailHelp = false; buttonText = 'Submit'" ng-class="{tab_active : !showEmailHelp }">LOGIN</a>
+                            <a href="#" ng-click="showEmailHelp = true; buttonText = 'Submit'"  ng-class="{tab_active : showEmailHelp }">FORGOT PASSWORD</a>
+                        </div>
                         <p id="451qa_msg_login" ng-show="loginMessage" ng-bind-html="loginMessage" class="alert alert-info"></p>
                         <div>
                             <div class="view-form-icon" ng-show="!showEmailHelp">
@@ -131,8 +135,8 @@
                             </div>
                             <input ng-disabled="login_form.$invalid" class="btn btn-large btn-primary btn-block login_btn" id="451_btn_login" type="submit" value="{{buttonText}}" />
                         </div>
-                        <a href="#" ng-show="!showEmailHelp && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">Forgot Password?</a>
-                    </form>
+                        <!-- <a href="#" ng-show="!showEmailHelp && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">Forgot Password?</a>
+ -->                    </form>
                 </div>
             </div>
         </div>
