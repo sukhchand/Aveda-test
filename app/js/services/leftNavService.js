@@ -57,13 +57,20 @@ four51.app.factory('leftNavService', ['$q', '$rootScope', '$resource', '$451', f
 // };
 
 
-var permissions;
+	var permissions = {
+		csr	: ['news', 'promotions', 'profile', 'claims', 'clients'],
+		sdp	: ['news', 'promotions', 'profile', 'claims', 'clients', 'salons', 'pendingOrder' ],
+		salonadmin	: ['news', 'promotions', 'profile', 'claims', 'clients', 'orders', 'salons', 'users'],
+		salonuser	: ['news', 'promotions', 'profile', 'orders']
+	};
 
-var _getUserType = function(userType){
-	return data[userType];
-};
-return {
-	getUserType : _getUserType
-}
+	var _getUserPermissions = function(userGrpName){
+		if(userGrpName == '' || !userGrpName)
+			return [];
+		return permissions[userGrpName];
+	};
+	return {
+		getUserPermissions : _getUserPermissions
+	}
 
 }]);
