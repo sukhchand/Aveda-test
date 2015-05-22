@@ -96,13 +96,24 @@ body{
 	color: #000;
 	background-color: #fff;
 }
+.navigation_div .search_div .product_type_submenu{
+	width: auto;
+}
+.navigation_div .search_div .search_field{
+	width: 65%;
+}
+.browse_div .browse_submenu,.navigation_div .search_div .product_type_submenu,.navigation_div .build_order_div .build_order_submenu, .navigation_div .user_account_div .user_account_submenu{
+	padding: 0;
+}
 .browse_div .browse_submenu li,.navigation_div .search_div .product_type_submenu li,.navigation_div .build_order_div ul li, .navigation_div .user_account_div ul li{
 	display: block;
 	float: none;
-	padding: 10px 0;
 	border:none;
 	border-bottom: 1px solid #ccc;
 	text-align: left;
+}
+.browse_div .browse_submenu li a,.navigation_div .search_div .product_type_submenu li a,.navigation_div .build_order_div ul li a, .navigation_div .user_account_div ul li a{
+	padding: 10px 20px;
 }
 .browse_div .browse_submenu li:last-child, .navigation_div .search_div .product_type_submenu li:last-child, .navigation_div .build_order_div ul li:last-child, .navigation_div .user_account_div ul li:last-child{
 	border: none;
@@ -116,3 +127,48 @@ body{
 .navigation_div .user_account_div .dropdown-toggle{
 	background: url('images/profile.png') no-repeat 20px 0;
 }
+.left_nav{
+	margin-top: 20px;
+	padding: 20px;
+	background: #9ea616;
+	display: inline-block;
+}
+.left_nav ul{
+	margin-top: 20px;
+}
+.left_nav .sidebar-nav li{
+	padding: 10px 0;
+}
+.left_nav .sidebar-nav li a{
+	color: #fff;
+}
+.left_nav .menu_icon{
+	background: url('images/menu_icon.png') no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.left_nav .menu_icon.promotions{
+	background-position: -25px 0;
+}
+.left_nav .menu_icon.profile{
+	background-position: -52px 0;
+}
+.left_nav .menu_icon.orders{
+	background-position: -78px 0;
+}
+.left_nav .menu_icon.salons{
+	background-position: -104px 0;
+}
+.left_nav .menu_icon.users{
+	background-position: -130px 0;
+}
+.left_nav .menu_icon.claim{
+	background-position: -156px 0;
+}
+.left_nav .menu_icon.dislike{
+	background-position: -182px 0;
+}
+
