@@ -1,65 +1,34 @@
-<!-- <aside>
-
-<H1>&nbsp;</H1>
-<H1>&nbsp;</H1>
-<H1>&nbsp;</H1>
-
-<span ng-show="hasPermission('news')">News</span>
-<span ng-show="hasPermission('promotions')">Promotions</span>
-<span ng-show="hasPermission('profile')">My Profile</span>
-<span ng-show="hasPermission('orders')">My Orders</span>
-<span ng-show="hasPermission('pendingOrder')">Pending Salon Order</span>
-<span ng-show="hasPermission('salons')">My Salons</span>
-<span ng-show="hasPermission('users')">My Users</span>
-<span ng-show="hasPermission('claims')">Submit Claim</span>
-<span ng-show="hasPermission('clients')">Client Dislike</span>
-
-</aside> -->
-<div class="left_nav">
-	<section>
-		<div id="sidebar-wrapper">
-			<a href="#">
-               <img src="css/images/logo_left_nav.png">
+<section class="col-lg-2 navs_container">
+    <div class="av_logo"><img src="images/LOGO.png"></div>
+    <ul class="nav sec_navs">
+        <li ng-click="addClass()">
+            <a href="javascript:void(0)" title="" >
+                <span class="nav_icon b_news"></span>NEWS
+                <span class="loc_icon pull-right">
+                    <img src="images/location_icon.png">
+                </span>
             </a>
-            <ul class="sidebar-nav">
-                <!-- <li class="sidebar-brand">
-                    <a href="#">
-                       <img src="css/images/logo_left_nav.png">
-                    </a>
-                </li> -->
-                <li>
-                	<div class="menu_icon news"></div>
-                    <a href="#">NEWS</a>
-                </li>
-                <li>
-                	<div class="menu_icon promotions"></div>
-                    <a href="#">PROMOTIONS</a>
-                </li>
-                <li>
-                	<div class="menu_icon profile"></div>
-                    <a href="#">MY PROFILE</a>
-                </li>
-                <li>
-                	<div class="menu_icon orders"></div>
-                    <a href="#">MY ORDERS</a>
-                </li>
-                <li>
-                	<div class="menu_icon salons"></div>
-                    <a href="#">MY SALONS</a>
-                </li>
-                <li>
-                	<div class="menu_icon users"></div>
-                    <a href="#">MY USERS</a>
-                </li>
-                <li>
-                	<div class="menu_icon claim"></div>
-                    <a href="#">SUBMIT CLAIM</a>
-                </li>
-                <li>
-                	<div class="menu_icon dislike"></div>
-                    <a href="#">CLIENT DISLIKE</a>
-                </li>
+        </li>
+        <li ng-click="addClass()">
+            <a href="javascript:void(0)" title="">
+                <span class="nav_icon b_promo"></span>PROMOTIONS
+            </a>
+        </li>
+        <li ng-click="addClass()">
+            <a href="javascript:void(0)" title="">
+                <span class="nav_icon b_my_pro"></span>MY PROFILE
+            </a>
+        </li>
+        <li ng-click="addClass()">
+            <a href="javascript:void(0)" title="" class="sec_nav_dd">
+                <span class="nav_icon b_my_ord"></span>MY ORDERS
+                <span class="glyphicon glyphicon-chevron-down pull-right c_lime_green" aria-hidden="true"></span>          
+            </a>
+            <ul class="my_ord_dd">
+                <li><a href="javscript:void(0)" title="">Order History</a></li>
+                <li><a href="javscript:void(0)" title="">Pending Orders</a></li>
+                <li><a href="javscript:void(0)" title="">User Orders</a></li>
             </ul>
-        </div>
-	</section>
-</div>
+        </li>
+    </ul>
+</section>
