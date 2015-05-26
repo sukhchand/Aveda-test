@@ -49,4 +49,5 @@ function ($location, $route, $scope, $451, User) {
 	$scope.$on('event:orderUpdate', function(event, order) {
 		$scope.cartCount = order ? (order.Status == 'Unsubmitted' || order.Status == 'AwaitingApproval') ? order.LineItems.length : null : null;
 	});
+    $('.browse_submenu').height(window.innerHeight-$('.main-nav').height());
 }]);

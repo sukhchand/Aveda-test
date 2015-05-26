@@ -30,5 +30,8 @@ function ($location, $route, $scope, $451, User, leftNavService) {
 	$('.sec_nav_dd').click(function(){
 		$('.my_ord_dd').slideToggle();
 	});
+	$('.sec_nav_dd1').click(function(){
+		$('.my_ord_dd1').slideToggle();
+	});
 
 }]);

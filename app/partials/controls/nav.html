@@ -1,132 +1,7 @@
 <header class="header navbar navbar-inner">
     <nav tolerance='20' offset='200' class="navbar navbar-default navbar-fixed-top main-nav" role="navigation" headroom>
-        <!-- <div style="background-image:url('css/images/avedaBG.jpg'); text-align:center;">
-            <a style="padding:15px 0;" ng-click="refreshUser()" href="catalog">
-                <img src="css/images/aveda_logo_white.png"/>
-            </a>
-        </div> -->
         <section>
             <div class="container">
-                <!-- <ul class="nav navbar-nav pull-left">
-                    <li class="back animated fadeInLeft" ng-class="{'ng-hide': isActive('catalog')}">
-                        <a href back-step class="back">
-                            <i class="fa fa-arrow-left"></i>
-                        </a>
-                    </li>
-                    <li class="products" ng-class="{'active': isInPath('catalog') || isInPath('product') || isInPath('cart/default') || isInPath('search')}">
-                        <a id="451qa_home_link" ng-show="Four51User.isAuthenticated()" href="catalog">
-                            <i class="fa fa-home"></i>
-                            <span class="hidden-xs">{{'Products' | rc}}</span>
-                        </a>
-                    </li>
-                    <li class="csr" ng-if="user.Permissions.contains('ViewQuickOrderEntry')" ng-class="{'active': isActive('csr'), 'active-xs': isActive('csr')}">
-                        <a ng-show="Four51User.isAuthenticated()" href="csr">
-                            <i class="fa fa-group"></i>
-                            <span class="hidden-xs">{{'Order Entry' | rc}}</span>
-                        </a>
-                    </li>
-                    <li class="order" ng-class="{'active': isActive('order'), 'active-xs': isActive('favoriteorders')}">
-                        <a id="451qa_order_link" href="order">
-                            <i class="fa fa-clipboard"></i>
-                            <span class="hidden-xs">{{'Orders' | r}}</span>
-                        </a>
-                    </li>
-                    <li class="report" ng-if="AppConst.debug" ng-class="{'active': isActive('reports')}">
-                        <a id="451qa_order_link" href="reports">
-                            <i class="fa fa-bar-chart-o"></i>
-                            <span class="hidden-xs">{{'Reports' | r}}</span>
-                        </a>
-                    </li>
-                    <li ng-if="user.Permissions.contains('ViewQuickOrderEntry')" class="records" ng-class="{'active': isActive('interactionrecords'), 'active-xs': isActive('interactionrecords')}">
-                        <a id="451qa_records_link" href="interactionrecords">
-                            <i class="fa fa-folder"></i>
-                            <span class="hidden-xs">{{'Interaction Records' | r}}</span>
-                        </a>
-                    </li>
-                    <li ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message', 'favoriteorders'])}">
-                        <a id="451qa_acct_link" href="admin" class="hidden-md hidden-lg">
-                            <i class="fa fa-cog"></i>
-                            <span class="hidden-xs">{{'Account' | r}}</span>
-                        </a>
-                    </li>
-                    <li class="dropdown admin-user visible-md visible-lg" ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message', 'favoriteorders'])}">
-                        <a id="451qa_acct_link2" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-cog"></i>
-                            <span class="hidden-xs">{{'Account' | r}}</span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li id="451qa_user_link" ng-show="user.Permissions.contains('ViewSelfAdmin')" class="admin">
-                                <a href="admin">
-                                    {{'User Information' | r}}
-                                </a>
-                            </li>
-                            <li id="451qa_addy_link" ng-show="user.Permissions.contains('CreateShipToAddress') || user.Permissions.contains('CreateBillToAddress')" class="addresses">
-                                <a href="addresses">
-                                    {{'Addresses' | r}}
-                                </a>
-                            </li>
-                            <li id="451qa_mesg_link" ng-show="user.Permissions.contains('ViewMessaging')" class="messages">
-                                <a href="message">
-                                    {{'Messages' | r}}
-                                </a>
-                            </li>
-                            <li class="favorites hidden-xs">
-                                <a id="451qa_fave_link" href="favoriteorders">
-                                    {{'Favorites' | r}}
-                                </a>
-                            </li>
-                            <li id="451qa_mesg_link" ng-show="user.Permissions.contains('ViewContactUs')" class="contactus">
-                                <a href="contactus">
-                                    {{'Contact Us' | r}}
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li ng-show="user.Type!='TempCustomer'" class="logout">
-                                <a href="#"  class="451_btn_logout" ng-click="Logout()">
-                                    <i class="fa fa-power-off text-danger"></i>
-                                    <span>{{'Log Out' | r}}</span>
-                                </a>
-                            </li>
-                            <li ng-if="AppConst.debug">
-                                <a href="#" ng-click="Clear()">
-                                    <i class="fa fa-archive"></i>
-                                    <span class="text-nav">Clear Cache</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href='http://server.iad.liveperson.net/hc/30438524/?cmd=file&file=visitorWantsToChat&site=30438524&byhref=1&imageUrl=http://images.liveperson.com/lp/30438524'
-                           target='chat30438524'
-                           onClick="javascript:window.open('http://server.iad.liveperson.net/hc/30438524/?cmd=file&file=visitorWantsToChat&site=30438524&imageUrl=http://images.liveperson.com/lp/30438524&referrer='+escape(document.location),'chat30438524','width=472,height=320');return false;" >-->
-                            <!--<img src='http://server.iad.liveperson.net/hc/30438524/?cmd=repstate&site=30438524&channel=web&&ver=1&imageUrl=http://images.liveperson.com/lp/30438524'
-                                 name='hcIcon' width=165 height=60 border=0>-->
-                            <!-- <i class="fa fa-comments"></i>
-                            <span class="hidden-xs">Live Chat</span>
-                        </a>
-                    </li>
-                    </ul> 
-                    <ul class="nav navbar-nav pull-right">
-                    <li class="dropdown hidden-sm hidden-xs">
-                        <a class="dropdown-toggle" data-toggle="dropdown">
-                            Language
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu" style="left:auto;right:0;">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">French</a></li>
-                        </ul>
-                    </li>
-                    <li class="cart" ng-class="{'active': isActive(['cart', 'checkout'])}">
-                        <a id="451qa_cart_link" ng-show="cartCount && user.CurrentOrderID" class="cart" href="cart">
-                            <span ng-bind="cartCount" class="badge"></span>
-                            <i class="fa fa-shopping-cart"></i>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
-                    </li>
-                </ul>
-                -->
                 <ul class="nav navigation_div">
                     <li role="presentation" class="col-lg-2 browse_div">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -136,28 +11,36 @@
                             <span class="text-primary browse_text">BROWSE</span>
                         </a>
                         <ul class="dropdown-menu browse_submenu" role="menu">
-                            <li role="presentation" class="active"><a href="#">Categories 1</a></li>
-                            <li role="presentation" class="active"><a href="#">Categories 2</a></li>
-                            <li role="presentation" class="active"><a href="#">Categories 3</a></li>
-                            <li role="presentation" class="active"><a href="#">Categories 4</a></li>
+                            <li role="presentation" class="active">
+                                <a href="#">HAIR CARE<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
+                            <li role="presentation" class="active">
+                                <a href="#">STYLING<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
+                            <li role="presentation" class="active">
+                                    <a href="#">SKINCARE<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
+                            <li role="presentation" class="active">
+                                    <a href="#">BODY<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
+                            <li role="presentation" class="active">
+                                    <a href="#">MEN<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
+                            <li role="presentation" class="active">
+                                    <a href="#">MAKE-UP<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
+                            <li role="presentation" class="active">
+                                    <a href="#">PERFUME<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
+                            <li role="presentation" class="active">
+                                    <a href="#">GIFTS<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
+                            <li role="presentation" class="active">
+                                    <a href="#">NEW<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+                            </li>
                         </ul>
                     </li>
                     <li class="col-lg-6 search_div">
-                        <!-- <div class="input-group">
-                          <div class="input-group-btn">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">PRODUCT TYPE<span class="caret"></span></button>
-                            <ul class="dropdown-menu product_type_submenu" role="menu">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li><a href="#">Something else here</a></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                          </div>
-                          <input type="text" class="form-control" aria-label="...">
-                          <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                          </span>
-                        </div> -->
                         <form role="form" class="input-group">
                             <div class="form-group input-group-btn">
                               <select class="form-control product_type_submenu" id="sel1">
