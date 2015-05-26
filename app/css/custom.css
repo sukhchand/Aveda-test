@@ -23,6 +23,9 @@ body{
 .LogoSection img{
 	margin: 0 auto;
 }
+.left_nav_main_container{
+	padding: 0;
+}
 .order-cloud .form-signin{
 	padding: 20% 0;
 	margin: 0 auto;
