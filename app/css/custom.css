@@ -97,6 +97,7 @@ body{
 	margin: 0 5px;
 	font-weight: bold;
 }
+/*Browse menu*/
 .browse_div .browse_submenu{
 	width: 100%;
 	background: #405260;
@@ -109,6 +110,9 @@ body{
 	color: #fff;
 	background: #405260;
 	border-left: 2px solid #405260;
+}
+.browse_div .browse_submenu .sub_browse_menu-2{
+	position: absolute;
 }
 
 .navigation_div .search_div .product_type_submenu{
@@ -132,6 +136,7 @@ body{
 }
 .browse_div .browse_submenu li{
 	border: none;
+	position: relative;
 }
 .browse_div .browse_submenu li a,.navigation_div .search_div .product_type_submenu li a,.navigation_div .build_order_div ul li a, .navigation_div .user_account_div ul li a{
 	padding: 10px 20px;
@@ -387,6 +392,8 @@ ul.my_ord_dd1 li a {
 ul.footer_menu {
 	padding: 0px;
 }
+
+/
 .footer_menu li {
 	display: inline-block;
 	padding: 10px 15px 0px 15px;
