@@ -4,6 +4,8 @@ Theme name: My SPA Theme
 Version: 1.0
 Template: Howdy
 */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body{
 	margin: 0;
 }
@@ -396,4 +398,85 @@ ul.footer_menu {
 }*/
 .c_lime_green{
 	margin-right: 10px;
+}
+
+/* vinod-news View */
+.av_news_mg_cont {
+	width: 100%;
+}
+.av_news_cont {
+	margin: 10px;
+	background-color: #fff;
+}
+.av_news_header {
+	padding: 20px 20px 0px 0px;
+}
+.av_news_head {
+	display: inline-block;
+	width: 50%;
+	font: bold 14px "PTSans","san-serif";
+	color: #585858;
+	padding: 0px 0px 15px 60px;
+	border-bottom: 1px solid #e5e9ec;
+}
+		/*	page folding effect	*/
+.page_fold {
+  position: relative;
+}
+ 
+.page_fold:before {
+  	content: "";
+  	position: absolute;
+  	top: 0%;
+  	left: 0%;
+  	width: 0px;
+  	height: 0px;
+  	border-bottom: 40px solid #FFF;
+  	border-left: 40px solid #D0D1CC;
+  	-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+	box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
+}
+			/*	page fold ends 	*/
+.av_news_count {
+	font: bold 12px "PTSans","sans-serif";
+	color: #999999;
+}
+.av_news_count span {
+	color: #9ea616;
+	font-size: 18px;
+	padding-left: 10px;
+}
+.av_news_feed {
+	padding: 1%;
+  	border-bottom: 1px solid #e5e9ec;
+  	margin: 0px;
+}
+.av_news_feed:last-child {
+	border: none;	
+}
+.av_news_feed_img img {
+	width: 132px;
+	height: 142px;
+	margin: 5%;
+}
+.av_news_feed_txt > h4 {
+	font: bold 22px "PTSans",sans-serif;
+	color: #000;
+}
+.av_news_feed_date {
+	font: normal 12px "OpenSans",sans-serif;
+	color: #a7a7a7;
+}
+.av_news_feed_txt > p {
+	font: normal 14px "OpenSans",sans-serif;
+	color: #000;
+	line-height: 20px;
+}
+.av_news_feed_txt > a {
+	font: bold 12px "OpenSans",sans-serif;
+	color: #9ea616;
+}
+.av_news_feed_txt {
+	padding-right: 40px;
 }
