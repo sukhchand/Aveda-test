@@ -29,9 +29,17 @@ function ($location, $route, $scope, $451, User, leftNavService) {
 	}
 	$('.sec_nav_dd').click(function(){
 		$('.my_ord_dd').slideToggle();
+		if($('.sec_nav_dd span.glyphicon').hasClass('glyphicon-chevron-down')) {
+			$('.sec_nav_dd span.glyphicon').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+		}
+		else {
+			$('.sec_nav_dd span.glyphicon').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+		}
 	});
 	$('.sec_nav_dd1').click(function(){
 		$('.my_ord_dd1').slideToggle();
 	});
+	
+	// changing arrow on toggle
 
 }]);

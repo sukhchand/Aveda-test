@@ -421,7 +421,7 @@ ul.footer_menu {
 .av_news_head {
 	display: inline-block;
 	width: 50%;
-	font: bold 14px "PTSans","san-serif";
+	font: bold 14px "PTSans",sans-serif;
 	color: #585858;
 	padding: 0px 0px 15px 60px;
 	border-bottom: 1px solid #e5e9ec;
