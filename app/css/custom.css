@@ -8,6 +8,8 @@ Template: Howdy
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 body{
 	margin: 0;
+	background: url('images/background.jpg');
+	background-size: cover;
 }
 .LPMcontainer {
     visibility: hidden;
@@ -74,6 +76,9 @@ body{
 	border-radius: 0;
 	border: none;
 }
+.left_container{
+	margin: 30px 0;
+}
 .main-nav{
 	background: #fff;
 }
@@ -113,8 +118,27 @@ body{
 }
 .browse_div .browse_submenu .sub_browse_menu-2{
 	position: absolute;
+	width: 100%;
+	right: -224px;
+	top: -30px;
+	padding: 15px 0;
+	background: #fff;
+	color:#000;
 }
-
+.browse_div .browse_submenu .sub_browse_menu-2 a{
+	background: transparent;
+	color: #000;
+	text-decoration: none;
+	border-left: 3px solid transparent;
+}
+.browse_div .browse_submenu .sub_browse_menu-2 a:hover{
+	background: #f7f7f5;
+	border-left: 3px solid #9ea616;
+	font-weight: normal;
+}
+.browse_div .browse_submenu .sub_browse_menu-2 a:hover:before{
+	content: none;
+}
 .navigation_div .search_div .product_type_submenu{
 	width: auto;
 }
@@ -384,7 +408,14 @@ ul.my_ord_dd1 li a {
 .av_copy {
 	color: #c2c9ce;
 	text-align: right;
-	padding-top: 12px;
+}
+.av_foot{
+	background: #fff;
+	padding: 14px 0;
+}
+.av_foot ul li{
+	display: inline-block;
+	margin: 0 10px;
 }
 .av_foot ul li a {
 	color: #999999;
@@ -417,14 +448,14 @@ ul.footer_menu {
 }
 .av_news_header {
 	padding: 20px 20px 0px 0px;
+	border-bottom: 1px solid #e5e9ec;
 }
 .av_news_head {
 	display: inline-block;
 	width: 50%;
 	font: bold 14px "PTSans",sans-serif;
 	color: #585858;
-	padding: 0px 0px 15px 60px;
-	border-bottom: 1px solid #e5e9ec;
+	padding: 0px 0px 15px 60px;	
 }
 		/*	page folding effect	*/
 .page_fold {
@@ -439,14 +470,14 @@ ul.footer_menu {
   	width: 0px;
   	height: 0px;
   	border-bottom: 40px solid #FFF;
-  	border-left: 40px solid #D0D1CC;
+  	border-left: 40px solid #DBDDD8;
   	-webkit-box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
 	-moz-box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
 	box-shadow: 3px 3px 4px rgba(0,0,0,0.2);
 }
 			/*	page fold ends 	*/
 .av_news_count {
-	font: bold 12px "PTSans","sans-serif";
+	font: bold 12px "PTSans",sans-serif;
 	color: #999999;
 }
 .av_news_count span {
