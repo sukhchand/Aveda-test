@@ -120,10 +120,11 @@ body{
 	position: absolute;
 	width: 100%;
 	right: -224px;
-	top: -30px;
+	top: -29px;
 	padding: 15px 0;
 	background: #fff;
 	color:#000;
+	display: none;
 }
 .browse_div .browse_submenu .sub_browse_menu-2 a{
 	background: transparent;
@@ -138,6 +139,19 @@ body{
 }
 .browse_div .browse_submenu .sub_browse_menu-2 a:hover:before{
 	content: none;
+}
+.browse_div .browse_submenu .sub_browse_menu-3{
+	position: absolute;
+	width: 100%;
+	right: -224px;
+	top: -15px;
+	padding: 15px 0;
+	background: #eaeae6;
+	color:#000;
+	display: none;
+}
+.browse_div .browse_submenu .sub_browse_menu-3 a:hover{
+	background: #fff;
 }
 .navigation_div .search_div .product_type_submenu{
 	width: auto;

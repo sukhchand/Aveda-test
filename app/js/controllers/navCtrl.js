@@ -49,6 +49,18 @@ function ($location, $route, $scope, $451, User) {
 	$scope.$on('event:orderUpdate', function(event, order) {
 		$scope.cartCount = order ? (order.Status == 'Unsubmitted' || order.Status == 'AwaitingApproval') ? order.LineItems.length : null : null;
 	});
-    $('.browse_submenu').height(window.innerHeight-$('.main-nav').height());
-    $('.sub_browse_menu-2').height(window.innerHeight-$('.main-nav').height());
+    $('.win-ht').height(window.innerHeight-$('.main-nav').height());
+   /* $('.browse_submenu li').mouseenter(function(){
+        console.log(this);
+        $(this).find("sub_browse_menu-2").css("display","block");
+        console.log($(this).find("sub_browse_menu-2").css("display","block"));
+    });
+    $('.sub_browse_menu-2 li').hover(function(){
+        $(this).find("sub_browse_menu-3").css("display","block");
+    })*/
+    $( '.browse_submenu li' ).mouseenter(function() {
+        console.log(this);
+      })
+      .mouseleave(function() {
+      });
 }]);
