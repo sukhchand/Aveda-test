@@ -3,7 +3,7 @@ function ($location, $route, $scope, $451, User, leftNavService) {
 	$scope.userGroupName = '';
 	$scope.permissions = [];
 	$scope.$on("data:userDetails",function(event,user){
-		$scope.userGroupName = user.Groups[0].Name.toLowerCase();
+		$scope.userGroupName = user.Groups[0].Name.toLowerCase() || 'salonuser';
 		$scope.permissions = leftNavService.getUserPermissions($scope.userGroupName);
 	});
 	$scope.hasPermission = function(hasPermission){
