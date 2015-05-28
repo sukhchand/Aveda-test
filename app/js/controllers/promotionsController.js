@@ -12,16 +12,10 @@ four51.app.controller('promotionsCtrl', ['$scope', '$rootScope', function($scope
     }
   ];
 
-  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
-
-  $scope.addItem = function() {
-    var newItemNo = $scope.items.length + 1;
-    $scope.items.push('Item ' + newItemNo);
-  };
-
   $scope.status = {
+    isItemOpen: new Array($scope.groups.length),
     isFirstOpen: true,
     isFirstDisabled: false
   };
-
+  $scope.status.isItemOpen[0] = true;
 }]);

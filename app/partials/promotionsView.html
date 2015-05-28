@@ -4,14 +4,12 @@
 
   
   <accordion close-others="oneAtATime">
-    <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+    <accordion-group ng-repeat="group in groups" is-open="status.isItemOpen[$index]">
+        <accordion-heading>
+            {{group.title}} <i class="pull-right glyphicon" ng-class="{'glyphicon-plus': !status.isItemOpen[$index], 'glyphicon-minus': status.isItemOpen[$index]}"></i>
+        </accordion-heading>
       {{group.content}}
     </accordion-group>
-    <accordion-group is-open="status.open">
-        <accordion-heading>
-            I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
-        </accordion-heading>
-        This is just some content to illustrate fancy headings.
-    </accordion-group>
+
   </accordion>
 </div>
