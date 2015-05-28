@@ -128,15 +128,15 @@
                           </ul>
                     </li>
                     <li class="col-lg-2 user_account_div">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hi, Julia Sosa <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hi, {{user.FirstName}} <span class="caret"></span></a>
                           <ul class="dropdown-menu user_account_submenu" role="menu">
-                            <li><a href="#">Action</a></li>
+                            <!-- <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+                            <li class="divider"></li> -->
+                            <li ng-show="user.Type!='TempCustomer'"><a href="#" ng-click="Logout()">{{ 'Log Out' | r}}</a></li>
                           </ul>
                     </li>
                 </ul>         
