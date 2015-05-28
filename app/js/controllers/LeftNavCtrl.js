@@ -10,19 +10,6 @@ function ($location, $route, $scope, $451, User, leftNavService) {
 		return $scope.permissions.indexOf(hasPermission) > -1;
 	}
 	$('.navs_container').height(window.innerHeight-$('.main-nav').height());
-	/*$('.sec_navs li').on('click', function(){
-		// if($(this).hasClass("active")){
-		// 	$('.sec_navs li').removeClass("active");
-		// 	console.log($(this).hasClass("active"));
-		// }
-		// else{
-		// 	$('.sec_navs li').removeClass("active");
-		// 	$(this).addClass("active");
-		// 	console.log($(this).hasClass("active"));
-		// }
-		$('.sec_navs li').removeClass("active");
-			$(this).addClass("active");
-	})*/
 	$scope.addClass=function(){
 		$('.sec_navs li').removeClass("active");
 		$(this).addClass("active");
