@@ -42,6 +42,7 @@ four51.app.config(['$routeProvider', '$locationProvider', function($routeProvide
 		when('/csr', { templateUrl: 'partials/csr.html', controller: 'CsrCtrl'}).
 		when('/promotions', { templateUrl: 'partials/promotionsView.html', controller: 'promotionsCtrl'}).
 		when('/news', { templateUrl: 'partials/newsView.html', controller: 'newsCtrl'}).
+		when('/profile', { templateUrl: 'partials/profileView.html', controller: 'profileCtrl'}).
 		when('/', { templateUrl: 'partials/dashboard.html', controller: 'dashboardCtrl'}).
 		otherwise({redirectTo: '/'});
 }]);
