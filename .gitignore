@@ -19,3 +19,4 @@ app/.htaccess
 app/js/451.js
 app/js/app.js
 >>>>>>> origin/master
+app/js/controllers/promotionsController.js
