@@ -1,9 +1,9 @@
 <!-- promotions -->
 <div class="av_accordion_container">  
-  <accordion close-others="oneAtATime" class="av_accordion_tab">
-    <accordion-group ng-repeat="group in groups" is-open="status.isItemOpen[$index]">
-        <accordion-heading class="av_accordion_title">
-            {{group.title}} <div class="av_toggle_minus pull-right" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+  <accordion close-others="oneAtATime" >
+    <accordion-group ng-repeat="group in groups" is-open="status.isItemOpen[$index]" class="av_accordion_tab" ng-class="{'expandend': status.isItemOpen[$index]}">
+        <accordion-heading>
+            {{group.title}} <div class="pull-right" ng-class="{'av_toggle_minus': status.isItemOpen[$index], 'av_toggle_plus': !status.isItemOpen[$index]}"><span ng-class="{'av_toggle_m': status.isItemOpen[$index], 'av_toggle_p': !status.isItemOpen[$index]}"></span></div>
         </accordion-heading>
         <div class="av_accordion_cntn">
         	<div class="av_promo_offer_list row">
@@ -12,7 +12,7 @@
 		        	<h4>{{group.product_heading}}</h4>
 		        	<p>{{group.product_descp}}</p>
 		        	<ul class="av_promo_fe">
-						<li ng-repeat="spec in group">{{spec.product_spec.spec}}</li>
+						<li ng-repeat="spec in group.product_spec">{{spec}}</li>
 					</ul>
 		        	<div class="av_promo_offer">{{group.product_discount}}</div>
 					<input type="text" value="0" >
@@ -24,79 +24,3 @@
 
   </accordion>
 </div>
-<!-- <div class="av_accordion_container">
- <div class="av_accordion_tab">
-  <div class="av_accordion_title av_ac_active">
-   Pure Privilege Bonus Points Offer
-    <div class="av_toggle_plus pull-right">
-     <span class="av_toggle_m_p"></span> 
-   </div>
-  </div>
-  <div class="av_accordion_cntn">       
-   <div class="av_promo_offer_list row">
-     <div class="av_promo_offer_list_img col-lg-3">
-      <img src="../css/images/promoImg1.jpg" alt="perfume"/>
-     </div>
-     <div class="av_promo_offer_list_txt col-lg-9">
-      <h4>Rosemary Mint Body Lotion Travel</h4>
-      <p>A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint</p>
-      <ul class="av_promo_fe">
-       <li>Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation</li>
-       <li>Softens and soothes</li>
-       <li>Mind- and body-energizing aroma</li>
-      </ul>
-      <div class="av_promo_offer">Save 71% and get each for only $1.50!!</div>
-      <input type="text" value="0" >
-      <button>ADD TO OREDER</button>
-     </div>
-    </div>
-    <div class="av_promo_offer_list row">
-     <div class="av_promo_offer_list_img col-lg-3">
-      <img src="../css/images/promoImg2.jpg" alt="perfume"/>
-     </div>
-     <div class="av_promo_offer_list_txt col-lg-9">
-      <h4>Aveda love&#153; pure-fume&#153; absolute&#153;  </h4>
-      <p>A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint</p>
-      <ul class="av_promo_fe">
-       <li>Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation</li>
-       <li>Softens and soothes</li>
-       <li>Mind- and body-energizing aroma</li>
-      </ul>
-      <div class="av_promo_offer">Save 71% and get each for only $1.50!!</div>
-      <input type="text" value="0" >
-      <button>ADD TO OREDER</button>
-     </div>
-    </div>
-  </div>
- </div>
- <div class="av_accordion_tab">
-  <div class="av_accordion_title ">
-   Pure Privilege Bonus Points Offer
-    <div class="av_toggle_plus pull-right">
-     <span class="av_toggle_m_p"></span> 
-   </div>
-  </div>
-  <div class="av_accordion_cntn">
-  </div>
- </div>
- <div class="av_accordion_tab">
-  <div class="av_accordion_title ">
-   Less stress + more points
-    <div class="av_toggle_plus pull-right">
-     <span class="av_toggle_m_p"></span> 
-   </div>
-  </div>
-  <div class="av_accordion_cntn">
-  </div>
- </div>
- <div class="av_accordion_tab">
-  <div class="av_accordion_title ">
-   Less stress + more points
-    <div class="av_toggle_plus pull-right">
-     <span class="av_toggle_m_p"></span> 
-   </div>
-  </div>
-  <div class="av_accordion_cntn">
-  </div>
- </div>
-</div> -->

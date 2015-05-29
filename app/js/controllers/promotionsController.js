@@ -7,8 +7,8 @@ four51.app.controller('promotionsCtrl', ['$scope', '$rootScope', function($scope
       product_image:'css/images/promoImg1.jpg',
       product_heading:'Rosemary Mint Body Lotion Travel',
       product_descp:'A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint',
-      product_spec:{"spec":["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
-      "Softens and soothes","Mind- and body-energizing aroma."]},
+      product_spec:["Cools and revitalizes skin with menthol., Imparts a cool, refreshing sensation",
+					"Softens and soothes","Mind- and body-energizing aroma."],
       product_discount:'Save 71% and get each for only $1.50!!'
     },
     {
@@ -16,8 +16,8 @@ four51.app.controller('promotionsCtrl', ['$scope', '$rootScope', function($scope
       product_image:'css/images/promoImg1.jpg',
       product_heading:'Rosemary Mint Body Lotion Travel',
       product_descp:'A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint',
-      product_spec:{"spec":["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
-      "Softens and soothes","Mind- and body-energizing aroma."]},
+      product_spec:["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
+      "Softens and soothes","Mind- and body-energizing aroma."],
       product_discount:'Save 71% and get each for only $1.50!!'
     },
     {
@@ -25,8 +25,8 @@ four51.app.controller('promotionsCtrl', ['$scope', '$rootScope', function($scope
       product_image:'css/images/promoImg1.jpg',
       product_heading:'Rosemary Mint Body Lotion Travel',
       product_descp:'A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint',
-      product_spec:{"spec":["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
-      "Softens and soothes","Mind- and body-energizing aroma."]},
+      product_spec:["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
+      "Softens and soothes","Mind- and body-energizing aroma."],
       product_discount:'Save 71% and get each for only $1.50!!'
     },
     {
@@ -34,8 +34,8 @@ four51.app.controller('promotionsCtrl', ['$scope', '$rootScope', function($scope
       product_image:'css/images/promoImg1.jpg',
       product_heading:'Rosemary Mint Body Lotion Travel',
       product_descp:'A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint',
-      product_spec:{"spec":["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
-      "Softens and soothes","Mind- and body-energizing aroma."]},
+      product_spec:["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
+      "Softens and soothes","Mind- and body-energizing aroma."],
       product_discount:'Save 71% and get each for only $1.50!!'
     }
   ];

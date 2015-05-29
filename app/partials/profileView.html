@@ -72,37 +72,17 @@
 		<div class="av_payment">
 			PAYMENT OPTIONS <span class="pull-right av_pay_cart">ADD CARD <img src="css/images/prodPurchase.png" alt="credit card option"></span>
 		</div>
-		<div class="av_accordion_container av_pay_acc">
-	<div class="av_accordion_tab">
-		<div class="av_accordion_title av_pay_tlt">
-			<strong>SPA CARD</strong> Visa endig in 6802
-				<div class="av_toggle_minus pull-right">
-					<span class="av_toggle_m"></span>	
-			</div>
-		</div>
-		<div class="av_accordion_cntn">   
-		</div>
-	</div>
-	<div class="av_accordion_tab">
-		<div class="av_accordion_title av_pay_tlt">
-			<strong>SPA CARD </strong>Visa endig in 6802
-				<div class="av_toggle_plus pull-right">
-					<span class="av_toggle_p"></span>	
-			</div>
-		</div>
-		<div class="av_accordion_cntn">
-		</div>
-	</div>
-	<div class="av_accordion_tab">
-		<div class="av_accordion_title av_pay_tlt">
-			<strong>PROMOTION CARD</strong> Visa endig in 6802
-				<div class="av_toggle_plus pull-right">
-					<span class="av_toggle_p"></span>	
-			</div>
-		</div>
-		<div class="av_accordion_cntn">
-		</div>
-	</div>
-</div>
+
+  <accordion close-others="oneAtATime" >
+    <accordion-group ng-repeat="group in groups" is-open="status.isItemOpen[$index]" class="av_accordion_tab av_pay_cc">
+        <accordion-heading>
+            {{group.title}} <div class="pull-right" ng-class="{'av_toggle_minus': status.isItemOpen[$index], 'av_toggle_plus': !status.isItemOpen[$index]}"><span ng-class="{'av_toggle_m': status.isItemOpen[$index], 'av_toggle_p': !status.isItemOpen[$index]}"></span></div>
+        </accordion-heading>
+        <div class="av_accordion_cntn">
+        </div>
+    </accordion-group>
+
+  </accordion>
+
 	</div>
 </div>
