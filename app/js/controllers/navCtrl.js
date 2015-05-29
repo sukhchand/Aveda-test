@@ -60,7 +60,16 @@ function ($location, $route, $scope, $451, User) {
     })*/
     $( '.browse_submenu li' ).mouseenter(function() {
         console.log(this);
+        $(this).find('ul.sub_browse_menu-2').css("display", "block");
       })
       .mouseleave(function() {
+        $(this).find('ul.sub_browse_menu-2').css("display", "none");
+      });
+      $( '.sub_browse_menu-2 li' ).mouseenter(function() {
+        console.log(this);
+        $(this).find('ul.sub_browse_menu-3').css("display", "block");
+      })
+      .mouseleave(function() {
+        $(this).find('ul.sub_browse_menu-3').css("display", "none");
       });
 }]);

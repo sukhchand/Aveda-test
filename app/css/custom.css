@@ -532,3 +532,103 @@ ul.footer_menu {
 .av_news_feed_txt {
 	padding-right: 40px;
 }
+
+
+
+
+.av_promo_offer_list_img img {
+ padding: 0 5%;
+}
+.av_promo_offer_list_txt > h4 {
+ font: bold 22px "PTSans",sans-serif;
+ color: #666666;
+}
+.av_promo_offer_list_txt > p,.av_promo_fe > li {
+ font: normal 14px "OpenSans",sans-serif;
+ color: #7e7e7e;
+}
+.av_promo_fe > li {
+ padding: 2px 0;
+}
+.av_promo_fe {
+ list-style: disc;
+ list-style-position: inside;
+}
+.av_promo_offer {
+ font: bold italic 15px "OpenSans",sans-serif;
+ color: #f58e31;
+ margin: 20px 0px ;
+}
+.av_promo_offer_list_txt > input {
+ width: 60px;
+ border-top: 3px solid #ececec;
+ border-bottom: 1px solid #ececec;
+ border-left: 2px solid #ececec;
+ border-right: 2px solid #ececec;
+ border-radius: 15%;
+ font: bold 20px sans-serif;
+ text-align: center;
+}
+.av_promo_offer_list_txt > button {
+ padding: 12px 24px;
+ font: bold 13px "PTSnas",sans-serif;
+ color: #fff;
+ background-color: #9ea616;
+ border: none;
+ margin: 0px 0px 8px 20px;
+ outline: none;
+}
+.av_promo_offer_list {
+ padding: 20px 0px;
+ margin: 0 20px;
+ border-bottom: 1px dashed #b4bec5;
+}
+.av_promo_offer_list:last-child {
+ border: none;
+}
+.av_accordion_cntn {
+ background-color: #fff;
+}
+.av_accordion_title {
+ background-color: #fff;
+ font: normal 22px "PTsnas",sans-serif;
+ color: #363636;
+ line-height: 40px;
+}
+.av_accordion_title.av_ac_active {
+ background-color: #ebebe7;
+ font: bold 22px "PTSans",sans-serif;
+ color: #666666;
+ padding: 10px 22px;
+ border: none;
+ line-height: 40px;
+ border-radius: 4px 4px 0 0 ;
+}
+.av_toggle_plus {
+ width: 35px;
+ height: 35px;
+ background-color: #9ea616;
+ border-radius: 50%;
+ position: relative;
+}
+.av_toggle_m_p {
+ width: 15px;
+ height: 2px;
+ background: #fff;
+ position: absolute;
+ top: 17px;
+ left: 10px;
+}
+.av_toggle_m_p:after {
+ content: "";
+ width: 15px;
+ height: 2px;
+ transform: rotateZ(90deg);
+}
+.av_accordion_container {
+ width: 100%;
+}
+.av_accordion_tab {
+ width: 100%;
+ box-shadow: 0px 3px 5px #999;
+}

@@ -3,12 +3,40 @@ four51.app.controller('promotionsCtrl', ['$scope', '$rootScope', function($scope
 
   $scope.groups = [
     {
-      title: 'Dynamic Group Header - 1',
-      content: 'Dynamic Group Body - 1'
+      title: 'Pure Privilege Bonus Points Offer',
+      product_image:'css/images/promoImg1.jpg',
+      product_heading:'Rosemary Mint Body Lotion Travel',
+      product_descp:'A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint',
+      product_spec:{"spec":["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
+      "Softens and soothes","Mind- and body-energizing aroma."]},
+      product_discount:'Save 71% and get each for only $1.50!!'
     },
     {
-      title: 'Dynamic Group Header - 2',
-      content: 'Dynamic Group Body - 2'
+      title: 'Less stress + more points',
+      product_image:'css/images/promoImg1.jpg',
+      product_heading:'Rosemary Mint Body Lotion Travel',
+      product_descp:'A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint',
+      product_spec:{"spec":["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
+      "Softens and soothes","Mind- and body-energizing aroma."]},
+      product_discount:'Save 71% and get each for only $1.50!!'
+    },
+    {
+      title: 'Free Shipping + new Thickening toninc w/$50',
+      product_image:'css/images/promoImg1.jpg',
+      product_heading:'Rosemary Mint Body Lotion Travel',
+      product_descp:'A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint',
+      product_spec:{"spec":["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
+      "Softens and soothes","Mind- and body-energizing aroma."]},
+      product_discount:'Save 71% and get each for only $1.50!!'
+    },
+    {
+      title: 'Free shiping with any invati&#153; purchase.',
+      product_image:'css/images/promoImg1.jpg',
+      product_heading:'Rosemary Mint Body Lotion Travel',
+      product_descp:'A silky, lightweight lotion that invigorates with a time-release aroma of certified organic rosemary and peppermint',
+      product_spec:{"spec":["Cools and revitalizes skin with menthol. Imparts a cool, refreshing sensation",
+      "Softens and soothes","Mind- and body-energizing aroma."]},
+      product_discount:'Save 71% and get each for only $1.50!!'
     }
   ];
 
