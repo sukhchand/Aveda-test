@@ -72,4 +72,17 @@ function ($location, $route, $scope, $451, User) {
       .mouseleave(function() {
         $(this).find('ul.sub_browse_menu-3').css("display", "none");
       });
+	// close effect for browse
+	$('.browse_div a.close-eff').on("click",function(){
+		if($('a.close-eff span.a_lines').hasClass("a_close")){
+			$('a.close-eff span.a_lines').removeClass("a_close");
+		}
+		else {
+			$('a.close-eff span.a_lines').addClass("a_close");
+		}
+			
+		});
+	$('.browse_div a.close-eff').on("blur",function(){
+		$('a.close-eff span.a_lines').removeClass("a_close");
+	});
 }]);

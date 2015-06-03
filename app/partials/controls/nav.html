@@ -1,19 +1,26 @@
+
 <header class="header navbar navbar-inner">
     <nav tolerance='20' offset='200' class="navbar navbar-default navbar-fixed-top main-nav" role="navigation" headroom>
         <section>
+			<div class="row dk_ndisp">
+				<div class="col-sm-12 col-xs-12"><div class="av_logo "><img src="css/images/logo_left_nav.png"></div></div>
+			</div>
             <div class="container">
                 <ul class="nav navigation_div">
-                    <li role="presentation" class="col-lg-2 browse_div">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <li role="presentation" class="col-lg-2  col-md-2 col-sm-2 col-xs-2 browse_div">
+                        <a href="#" class="dropdown-toggle close-eff" data-toggle="dropdown" role="button" aria-expanded="false">
+<!--
                             <span class="sand_icon">
                                 <i class="fa fa-bars" ng-class="{ 'text-info': navStatus.visible }"></i>
                             </span>
-                            <span class="text-primary browse_text">BROWSE</span>
+-->
+							<span class="a_lines"></span>
+                            <span class="text-primary browse_text mb_disp">BROWSE</span>
                         </a>
-                        <ul class="dropdown-menu browse_submenu win-ht" role="menu">
+                        <ul class="dropdown-menu browse_submenu win-ht mb_disp" role="menu">
                             <li role="presentation" class="active">
                                 <a href="#">HAIR CARE<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
-                                <ul class="dropdown-menu-right col-lg-2 sub_browse_menu-2 win-ht">
+                                <ul class="dropdown-menu-right col-lg-2 sub_browse_menu-2 win-ht mb_disp">
                                     <li>
                                         <a href="#">Shampoo<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
                                         <ul class="dropdown-menu-right win-ht sub_browse_menu-3">
@@ -220,25 +227,25 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="col-lg-6 search_div">
+                    <li class="col-lg-6 col-md-6 col-sm-6 col-xs-2 search_div">
                         <form role="form" class="input-group">
                             <div class="form-group input-group-btn">
-                              <select class="form-control product_type_submenu" id="sel1">
+                              <select class="form-control product_type_submenu mb_disp tb_ndisp" id="sel1">
                                 <option>PRODUCT TYPE</option>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
                               </select>
-                              <input type="text" class="form-control search_field" aria-label="...">
+                              <input type="text" class="form-control search_field mb_disp mb_search" aria-label="...">
                               <span class="input-group-btn">
                                 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                               </span>
                           </div>
                         </form>
                     </li>
-                    <li class="col-lg-2 build_order_div">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Build Order <span class="caret"></span></a>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 build_order_div">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="av_build_orbg"></span>Build Order <span class="caret c_gray"></span></a>
                           <ul class="dropdown-menu build_order_submenu" role="menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -247,8 +254,8 @@
                             <li><a href="#">One more separated link</a></li>
                           </ul>
                     </li>
-                    <li class="col-lg-2 user_account_div">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hi, {{user.FirstName}} <span class="caret"></span></a>
+                    <li class="col-lg-2 col-md-2 col-sm-2 col-xs-2 user_account_div">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="av_dp"></span><span class="mb_disp">Hi, {{user.FirstName}}</span> <span class="caret c_gray"></span></a>
                           <ul class="dropdown-menu user_account_submenu" role="menu">
                             <!-- <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
@@ -256,6 +263,7 @@
                             <li class="divider"></li>
                             <li><a href="#">Separated link</a></li>
                             <li class="divider"></li> -->
+							 <li class="dk_ndisp"><a href="#">Hi, {{user.FirstName}}</a></li>
                             <li ng-show="user.Type!='TempCustomer'"><a href="#" ng-click="Logout()">{{ 'Log Out' | r}}</a></li>
                           </ul>
                     </li>
