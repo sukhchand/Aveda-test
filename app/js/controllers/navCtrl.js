@@ -50,6 +50,7 @@ function ($location, $route, $scope, $451, User) {
 		$scope.cartCount = order ? (order.Status == 'Unsubmitted' || order.Status == 'AwaitingApproval') ? order.LineItems.length : null : null;
 	});
     $('.win-ht').height(window.innerHeight-$('.main-nav').height());
+	
    /* $('.browse_submenu li').mouseenter(function(){
         console.log(this);
         $(this).find("sub_browse_menu-2").css("display","block");
@@ -84,5 +85,20 @@ function ($location, $route, $scope, $451, User) {
 		});
 	$('.browse_div a.close-eff').on("blur",function(){
 		$('a.close-eff span.a_lines').removeClass("a_close");
+	});
+	
+	// for mobile view header scroll up / down
+		var lastScroll = 0;
+	$(window).scroll(function(event) {
+		if ($(window).width() < 676) {
+			var st = $(this).scrollTop();
+			if( st > lastScroll) {
+				$('header.header.navbar').fadeOut("slow");
+			}
+			else {
+				$('header.header.navbar').slideDown();
+			}
+			lastScroll = st ;
+		}
 	});
 }]);

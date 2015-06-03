@@ -719,7 +719,7 @@ ul.footer_menu {
 	padding-top: 0;
 }
 .av_subsrp_row input {
-	min-height: 20px;
+	min-height: 24px;
 }
 .av_payment {
 	font: bold 18px "PTSans",sans-serif;
@@ -740,6 +740,39 @@ ul.footer_menu {
 }
 .av_pay_tlt {
 	font-size: 19px;
+}
+.green_radio input {
+	position: relative;
+  	top: -3px;
+	z-index: 2;
+	width: 24px;
+  	opacity: 0;
+}
+.green_radio input + label {
+	position: absolute;
+  	height: 24px;
+  	width: 24px;
+  	border-radius: 50%;
+  	padding: 6px;
+  	top: 0;
+	background-color: #fff;
+	border: 1px solid #e9e9e9;
+}
+.green_radio input + label:after {
+	position: absolute;
+  	content: '';
+  	height: 16px;
+  	width: 16px;
+  	border-radius: 50%;
+  	top: 3px;
+  	left: 3px;
+	background-color: #e9e9e9;
+}
+.green_radio input:checked + label {
+  	border: 1px solid #a6cf1e;
+}
+.green_radio input:checked + label:after {
+  	background-color: #a6cf1e;
 }
 		/* accordion check */
 .av_accordion_tab > .panel-heading > h4.panel-title {
