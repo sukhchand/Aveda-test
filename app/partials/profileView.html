@@ -78,8 +78,16 @@
         <accordion-heading>
             {{group.title}} <div class="pull-right" ng-class="{'av_toggle_minus': status.isItemOpen[$index], 'av_toggle_plus': !status.isItemOpen[$index]}"><span ng-class="{'av_toggle_m': status.isItemOpen[$index], 'av_toggle_p': !status.isItemOpen[$index]}"></span></div>
         </accordion-heading>
-        <div class="av_accordion_cntn">
+<!--		 content goes here -->
+        <div class="row av_pay_add">
+			<div class="col-lg-5 col-md-5 lf"><h6>{{group.NameOnCard}}</h6>
+			<p>{{group.Name}}</p></div>
+			<div class="col-lg-7 col-md-7 rg"><h6>{{group.BillAdd}}</h6>
+			<p><strong>{{group.Name}}</strong></p>
+			<p>{{group.add1}}</p>
+			<p>{{group.add2}}</p></div>
         </div>
+		<button class="av_profile_btn btn_del pull-right">DELETE</button><button class="av_profile_btn  btn_edit pull-right">EDIT</button>
     </accordion-group>
 
   </accordion>
