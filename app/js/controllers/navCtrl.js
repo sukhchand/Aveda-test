@@ -45,8 +45,80 @@ function ($location, $route, $scope, $451, User) {
 	$scope.Clear = function() {
 		localStorage.clear();
 	}
+    $scope.selected_type= "default";
+    
+$scope.searchRes = {
+"salon": [
+    {
+        name : 'Salon Blue',        
+        shop_id : '12320492',
+        address : '3489 Independence Dr N,<br> Minneapolis, MN',
+        queries : ['salon','salon blue']
+        },
+    {
+        name : 'Salon Blue Ivy',        
+        shop_id : '12320493',
+        address : '3489 Independence Dr N,<br> Minneapolis, MN',
+        queries : ['salon','salon blue', 'salon blue ivy']
+        },
+    {
+        name : 'Salon Blue Sky',        
+        shop_id : '12320494',
+        address: '3489 Independence Dr N,<br> Minneapolis, MN',
+        queries : ['salon','salon blue','salon blue sky']
+        },
+    {
+        name : 'Salon Blueberry',        
+        shop_id : '12320495',
+        address : '3489 Independence Dr N,<br> Minneapolis, MN',
+        queries : ['salon','salon blue', 'salon blueberry']
+        },
+    {
+        name : 'Salon Pink',        
+        shop_id : '12320496',
+        address : '3489 Independence Dr N,<br> Minneapolis, MN',
+        queries: ['salon','salon pink']
+        },
+        
+    ],
+    "products" : [
+    {
+        product_image : 'images/prod1.jpg',        
+        name : 'Invati Exfoliating Shampoo 250ml',
+        product_id : '12320492',
+        product_price : '$10.50',
+        queries : ['Shampoo','Shampoo 250ml']
+        },
+    {
+        product_image : 'images/prod2.jpg',        
+        name : 'aveda men pure-formance exfoliating Shampoo',
+        product_id : '12320493',
+        product_price : '$10.50',
+        queries : ['Shampoo','Shampoo 250ml', 'men', 'men Shampoo']
+        },
+    {
+        product_image : 'images/prod3.jpg',        
+        name : 'Imadder root Shampoo',
+        product_id : '12320494',
+        product_price : '$33.00',
+        queries : ['Shampoo']
+        },
+    {
+        product_image : 'images/prod4.jpg',        
+        name: 'pure abundance volumizing Shampoo',
+        product_id : '12320495',
+        product_price : '$21.00',
+        queries : ['Shampoo']
+        }
+    ]
+    };
+    $scope.search_func= function(xx){
+        console.log($scope.selected_type,xx);
+        console.log($scope.searchRes[$scope.selected_type]);
+        $scope.resData = $scope.searchRes[$scope.selected_type];
+    }
 
-	$scope.$on('event:orderUpdate', function(event, order) {
+    $scope.$on('event:orderUpdate', function(event, order) {
 		$scope.cartCount = order ? (order.Status == 'Unsubmitted' || order.Status == 'AwaitingApproval') ? order.LineItems.length : null : null;
 	});
     $('.win-ht').height(window.innerHeight-$('.main-nav').height());

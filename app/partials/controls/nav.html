@@ -20,7 +20,7 @@
                         <ul class="dropdown-menu browse_submenu win-ht mb_disp" role="menu">
                             <li role="presentation" class="active">
                                 <a href="#">HAIR CARE<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
-                                <ul class="dropdown-menu-right col-lg-2 sub_browse_menu-2 win-ht mb_disp">
+                                <ul class="dropdown-menu-right col-lg-2 col-md-2 col-sm-2 sub_browse_menu-2 win-ht mb_disp">
                                     <li>
                                         <a href="#">Shampoo<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
                                         <ul class="dropdown-menu-right win-ht sub_browse_menu-3">
@@ -83,7 +83,7 @@
                             </li>
                             <li role="presentation" class="active">
                                 <a href="#">STYLING<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
-                                <ul class="dropdown-menu-right col-lg-2 sub_browse_menu-2 win-ht">
+                                <ul class="dropdown-menu-right col-lg-2 col-md-2 col-sm-2 sub_browse_menu-2 win-ht">
                                     <li>
                                         <a href="#">Shampoo<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
                                         <ul class="dropdown-menu-right win-ht sub_browse_menu-3">
@@ -146,7 +146,7 @@
                             </li>
                             <li role="presentation" class="active">
                                     <a href="#">SKINCARE<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
-                                    <ul class="dropdown-menu-right col-lg-2 sub_browse_menu-2 win-ht">
+                                    <ul class="dropdown-menu-right col-lg-2 col-md-2 col-sm-2 sub_browse_menu-2 win-ht">
                                     <li>
                                         <a href="#">Shampoo<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
                                         <ul class="dropdown-menu-right win-ht sub_browse_menu-3">
@@ -230,19 +230,34 @@
                     <li class="col-lg-6 col-md-6 col-sm-6 col-xs-2 search_div">
                         <form role="form" class="input-group">
                             <div class="form-group input-group-btn">
-                              <select class="form-control product_type_submenu mb_disp tb_ndisp" id="sel1">
-                                <option>PRODUCT TYPE</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
+                              <select class="form-control product_type_submenu mb_disp tb_ndisp" id="sel1" ng-model="selected_type">
+                                <option value="default">PRODUCT TYPE</option>
+                                <option value="salon">Salon</option>
+                                <option value="products">Products</option>
                               </select>
-                              <input type="text" class="form-control search_field mb_disp mb_search" aria-label="...">
+                              <input type="text" class="form-control search_field mb_disp mb_search" ng-keypress="search_func(searchkeyword)" ng-model="searchkeyword" aria-label="...">
                               <span class="input-group-btn">
-                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                <button class="btn btn-default" type="button" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                               </span>
+
                           </div>
                         </form>
+                        <div class="search_result">
+                            <ul>
+                                <li ng-repeat="res in resData | filter:firstLetter(searchkeyword)">                                 
+                                    <!-- <a href="#"><p><img ng-src="{{salon.products.product_image}}"/>{{salon.salon.name}}<br><span>{{salon.salon.shop_id}}</span></p><span ng-bind-html="salon.salon.address">{{salon.products.product_price}}</span></a> -->
+                                    <div ng-if="selected_type=='salon'"><a href="#"><p>{{res.name}}<br><span>{{res.shop_id}}</span></p><span ng-bind-html="res.address"></span></a></div>
+                                    <div ng-if="selected_type=='products'"><a href="#"><p><img ng-src="{{res.product_image}}"/>{{res.name}}<br><span>{{res.product_id}}</span></p><span>{{res.product_price}}</span></a></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="search_product_result" ng-show="searchProductResult">
+                            <ul>
+                                <li ng-repeat="salon in products">
+                                    <a href="#"><p><img ng-src="{{products.product_image}}"/>{{products.product_name}}<br><span>{{products.product_id}}</span></p><span>{{products.product_price}}</span></a>
+                                </li>
+                            </ul>
+                        </div> -->
                     </li>
                     <li class="col-lg-2 col-md-2 col-sm-2 col-xs-6 build_order_div">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="av_build_orbg"></span>Build Order <span class="caret c_gray"></span></a>

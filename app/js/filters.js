@@ -112,3 +112,19 @@ four51.app.filter('culturecurrency', function() {
         }
     }
 });
+
+four51.app.filter('firstLetter', function () {
+   return function (items,letter) {
+   	var filteredData = [];
+   	if(!letter){ filteredData=items; }
+   	else{
+      angular.forEach(items,function(item) {
+					var cname=item.name;
+                   if(cname.toLowerCase().indexOf(letter) == 0){
+                       filteredData.push(item);
+                   }
+       });               
+   }
+   return filteredData;
+}
+});

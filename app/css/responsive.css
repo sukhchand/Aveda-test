@@ -1,0 +1,70 @@
+@media (min-width:1200px) {
+	
+}
+@media (min-width:992px) {
+	
+}
+@media (min-width:768px) {
+	.dk_ndisp {
+		display: none !important;
+	}
+	.tb_ndisp {
+		display: none;
+	}
+}
+/* media for all mobile portrait and landscape 767px */
+@media (max-width:767px) {
+	/*	login page 	*/
+	.LogoSection {
+		padding: 8% 0;
+	}
+	.form_div {
+		padding: 5% 5%;
+	}
+	.order-cloud .form-signin {
+		min-width: 100%;
+		padding: 0;
+	}
+	.navs_container {
+		position: relative;
+		width: 100%;
+	}
+	.mb_disp {
+		display: none !important;
+	}
+	.navigation_div .build_order_div > a{
+		padding: 8% 1%;
+	}
+	.navigation_div .user_account_div > a {
+		padding: 24% 8%;
+	}
+	.navigation_div .browse_div >a {
+		padding: 24% 1%;
+	}
+	.av_logo {
+		height: 42px;
+		background: #9ea616;
+		padding: 1%;
+	}
+	.av_logo img {
+		width: 110px;
+		height: 30px;
+		margin: auto;
+	}
+	.mb_search {
+		position: absolute;
+		top: 10%;
+		width: 100%;
+	}
+	ul.dropdown-menu.user_account_submenu {
+  		right: 0;
+		left: auto;
+	}
+}
+	/* media 768 */
+@media (max-width:468px) {
+	
+}
+@media (max-width:380px) {
+	
+}
