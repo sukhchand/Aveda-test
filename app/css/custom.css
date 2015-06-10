@@ -7,6 +7,8 @@ Template: Howdy
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css);
+
 	/* global */
 * {
 	-webkit-box-sizing: border-box;
@@ -16,6 +18,7 @@ body{
 	margin: 0;
 	background: url('images/background.jpg');
 	background-size: cover;
+	font-family: 'Open Sans';
 }
 .header, .header > .navbar-default{
 	border: none;
@@ -87,7 +90,8 @@ body{
 	border: none;
 }
 .left_container{
-	margin: 30px 0;
+	margin: 25px 0;
+	padding:0;
 }
 .main-nav{
 	background: #fff;
@@ -153,7 +157,7 @@ body{
 	width: auto;
 }
 .navigation_div .search_div .search_field{
-	width: 73%;
+	width: 72%;
 }
 .browse_div .browse_submenu,.navigation_div .search_div .product_type_submenu,.navigation_div .build_order_div .build_order_submenu, .navigation_div .user_account_div .user_account_submenu{
 	padding: 0;
@@ -205,7 +209,7 @@ body{
 .navigation_div .search_div .search_result{
 	position: absolute;
 	background-color: #fff;
-	display: block;
+	/*display: block;*/
 	width: 98%;
 	right: 0;
 	top: 106%;
@@ -236,7 +240,8 @@ body{
 	margin-left: 40%;
 }
 .navigation_div .search_div .search_result ul li{
-	width: 100%;	
+	width: 100%;
+	padding: 10px 0;
 }
 .navigation_div .search_div .search_result ul li:nth-child(even){
 	background: #f9f9f8;
@@ -245,6 +250,10 @@ body{
 	display: block;
 	padding: 5px 25px;
 	text-align: left;
+}
+.navigation_div .search_div .search_result ul li a img{
+	display: inline-block;
+	float: left;
 }
 .navigation_div .search_div .search_result ul li a p{
 	float: left;
@@ -258,6 +267,10 @@ body{
 	float: right;
 	font-size: 12px;
 	color: #b1b1b1;
+}
+.navigation_div .search_div .search_result ul li a span.price{
+	color: #9ea616;
+	font-size: 18px;
 }
 .av_build_orbg{
 	padding: 8px 13px 13px 13px;
@@ -944,4 +957,43 @@ ul.footer_menu {
 	transform-origin: 50% 50%;
     top:0;
 	transform: rotate3d(0,0,1,45deg);
+}
+.myorder_head{
+	background: #46555c;
+	padding-top: 20px;
+	z-index: 9999;
+}
+.myorder_head ul li{
+	display: inline-block;
+	margin: 0 20px;
+}
+.myorder_head ul li a{
+	text-decoration: none;
+	color: rgba(255,255,255,0.6);
+	font-weight: bold;
+	border-bottom: 4px solid transparent;
+}
+.myorder_head ul li a:hover{
+	color: rgba(255,255,255,1);
+	border-bottom: 4px solid #9ea616;
+}
+.myorder_content .my_order_filter select{
+	padding: 0 20px;
+	float: right;
+	margin:20px 10px;
+}
+.my_order_filter{
+	clear: both;
+}
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 100%;
+    /*position: static;*/
+    height: 800px;
+}
+.gridStyle div{
+	/*position: static;*/
+}
+.ngCellText {
+   left: 0px !important;
 }

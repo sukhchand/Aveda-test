@@ -242,12 +242,12 @@
 
                           </div>
                         </form>
-                        <div class="search_result">
+                        <div class="search_result" ng-show="searchkeyword">
                             <ul>
-                                <li ng-repeat="res in resData |firstLetter:searchkeyword">
+                                <li ng-repeat="res in resData |filter:{name:searchkeyword}">
                                     <!-- <a href="#"><p><img ng-src="{{salon.products.product_image}}"/>{{salon.salon.name}}<br><span>{{salon.salon.shop_id}}</span></p><span ng-bind-html="salon.salon.address">{{salon.products.product_price}}</span></a> -->
                                     <div ng-if="selected_type=='salon'"><a href="#"><p>{{res.name}}<br><span>{{res.shop_id}}</span></p><span ng-bind-html="res.address"></span></a></div>
-                                    <div ng-if="selected_type=='products'"><a href="#"><p><img ng-src="{{res.product_image}}"/>{{res.name}}<br><span>{{res.product_id}}</span></p><span>{{res.product_price}}</span></a></div>
+                                    <div ng-if="selected_type=='products'"><a href="#"><img ng-src="{{res.product_image}}"/><p>{{res.name}}<br><span>{{res.product_id}}</span></p><span class="price">{{res.product_price}}</span></a></div>
                                 </li>
                             </ul>
                         </div>

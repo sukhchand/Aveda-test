@@ -83,28 +83,28 @@ $scope.searchRes = {
     ],
     "products" : [
     {
-        product_image : 'images/prod1.jpg',        
+        product_image : 'css/images/prod1.png',        
         name : 'Invati Exfoliating Shampoo 250ml',
         product_id : '12320492',
         product_price : '$10.50',
         queries : ['Shampoo','Shampoo 250ml']
         },
     {
-        product_image : 'images/prod2.jpg',        
+        product_image : 'css/images/prod2.png',        
         name : 'aveda men pure-formance exfoliating Shampoo',
         product_id : '12320493',
         product_price : '$10.50',
         queries : ['Shampoo','Shampoo 250ml', 'men', 'men Shampoo']
         },
     {
-        product_image : 'images/prod3.jpg',        
+        product_image : 'css/images/prod3.png',        
         name : 'Imadder root Shampoo',
         product_id : '12320494',
         product_price : '$33.00',
         queries : ['Shampoo']
         },
     {
-        product_image : 'images/prod4.jpg',        
+        product_image : 'css/images/prod4.png',        
         name: 'pure abundance volumizing Shampoo',
         product_id : '12320495',
         product_price : '$21.00',
