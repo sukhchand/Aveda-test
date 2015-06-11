@@ -961,7 +961,7 @@ ul.footer_menu {
 .myorder_head{
 	background: #46555c;
 	padding-top: 20px;
-	z-index: 9999;
+	/*z-index: 9999;*/
 }
 .myorder_head ul li{
 	display: inline-block;
@@ -977,23 +977,136 @@ ul.footer_menu {
 	color: rgba(255,255,255,1);
 	border-bottom: 4px solid #9ea616;
 }
-.myorder_content .my_order_filter select{
+.myorder_head ul li a.my_order_active{
+	color: rgba(255,255,255,1);
+	border-bottom: 4px solid #9ea616;
+}
+.content-div{
+	background: #fff;
 	padding: 0 20px;
-	float: right;
-	margin:20px 10px;
 }
 .my_order_filter{
 	clear: both;
+	display: inline-block;
+	width: 100%;
+}
+.myorder_content{
+	padding: 0;
+	height: 71vh;
+	overflow: auto;
+}
+.myorder_content .my_order_filter select{
+	padding: 0 20px;
+	float: right;
+	margin:20px 0px;
 }
 .gridStyle {
-    border: 1px solid rgb(212,212,212);
+    border: 1px solid #e8eaeb;
     width: 100%;
     /*position: static;*/
-    height: 800px;
 }
-.gridStyle div{
-	/*position: static;*/
+.ngTopPanel{
+	background: #e3e8e9;
+}
+.ngViewport{
+	text-align: center;
+	height: auto !important;
+}
+.ngCanvas{
+	height: auto !important;
+}
+.ngCanvas,.ngRow{
+	width: 100% !important;
+}
+.ngHeaderText{
+	padding: 5px 10px;
+	font-size: 13px;
+}
+.ngHeaderScroller{
+	border-left: 4px solid transparent;
+}
+.ngRow{
+	height: 40px !important;
+	position: relative;
+	top: 0 !important;
+	border-left: 4px solid transparent;
+}
+.ngRow:hover{
+	border-left: 4px solid #a6cf1e;
+}
+.ngRow:hover .ngCell a{
+	color: #a7ae2c;
+}
+.ngRow:hover .col6{
+	background: #a8af2d;
+}
+.ngRow:hover .col6 a{
+	color: #fff;
+}
+.ngRow.even{
+	background: #fff;
+}
+.ngRow.odd{
+	background: #fafbfb;
+}
+.ngCell{
+	height: 100% !important;
+	cursor: auto !important;
+}
+.ngCell div{
+	height: 100% !important;
+}
+.ngCell a{
+	display: block;
+	/*padding: 5px 0;*/
+	line-height: 2.5;
+	font-weight: bold;
+}
+.ngRow .col6{
+	width: 166px !important;
+	font-size: 12px;
+	padding: 0 41px;
+}
+.ngRow .col6 a{
+	line-height: 1.2;
+	margin: 5px 0;
 }
 .ngCellText {
    left: 0px !important;
+}
+.ngCellText span{
+	vertical-align: middle;
+	line-height: 2;
+}
+.status_icon {
+	background-color: #737373;
+	font-size: 11px;
+	padding: 5px 10px;
+	width: 110px;
+	min-height: 0;
+	margin: 3% 0;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	text-align: right;
+	background-size: 20px;
+	border: none;
+}
+.status_icon.shipped{
+	background-image: url('images/Cruiser_front_view_24.png');
+}
+.status_icon.delivered{
+	background-image: url('images/Delivery_package_opened_24.png');
+}
+.status_icon.cancelled{
+	background-image: url('images/Shopping_Cart_Cross_Button-512.png');
+}
+.status_icon.pending{
+	background-image: url('images/Hourglass_24.png');
+}
+.ng1433998291391 .colt6{
+	font-size: 12px;
+	padding: 0 35px;
+}
+.myorder_view{
+	background: #fff;
 }
