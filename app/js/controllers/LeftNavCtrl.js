@@ -9,6 +9,16 @@ function ($location, $route, $scope, $451, User, leftNavService) {
 	$scope.hasPermission = function(hasPermission){
 		return $scope.permissions.indexOf(hasPermission) > -1;
 	}
+	$scope.orderMenu = [
+		{ orderName : 'Order History', href : "/myorders/orderHistory" },
+		{ orderName : 'Pending Orders', href : "/myorders/pendingOrders" },
+		{ orderName : 'User Orders', href : "/myorders/userOrders" }
+	];
+	$scope.orderMenuActive = 0;
+	$scope.orderMenuActtivFn = function(index){
+		console.log(index);
+		$scope.orderMenuActive = index || 0;
+	};
 	$('.navs_container').height(window.innerHeight-$('.main-nav').height());
 	/*$('.sec_navs li').on('click', function(){
 		// if($(this).hasClass("active")){

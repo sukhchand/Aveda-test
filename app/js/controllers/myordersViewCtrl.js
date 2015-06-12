@@ -1,4 +1,7 @@
-four51.app.controller('myordersCtrl', ['$scope', '$rootScope', function($scope, $rootScope){
+four51.app.controller('myordersCtrl', ['$scope', '$rootScope', '$routeParams', function($scope, $rootScope,$routeParams){
+
+  $scope.orderType = $routeParams.orderType ? $routeParams.orderType : 'orderHistory' ;
+  
   $scope.Orders =[{  	
   		orderId:'12485345-456',
   		createdBy:'Ryan Belinger',
@@ -174,5 +177,12 @@ four51.app.controller('myordersCtrl', ['$scope', '$rootScope', function($scope, 
        }
 
     };
+
+    if($scope.orderType === 'pendingOrders'){   
+          $scope.Orders = _.pluck(_.where($scope.Orders, { 'status': 'pending'}));   
+       }
+       else{       
+        $scope.Orders = $scope.OrdersCopy;
+       }
 
 }]);
