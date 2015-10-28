@@ -1,0 +1,59 @@
+<div class="col-lg-2 col-md-2 col-sm-2 navs_container">
+    <div class="av_logo mb_disp"><img src="css/images/logo_left_nav.png"></div>
+    <ul class="nav sec_navs">
+        <li ng-click="addClass()">
+            <a href="/news" title="" >
+                <span class="nav_icon b_news"></span>NEWS
+                <span class="loc_icon pull-right">
+                    <img src="../../css/images/location_icon.png">
+                </span>
+            </a>
+        </li>
+        <li ng-click="addClass()">
+            <a href="/promotions" title="">
+                <span class="nav_icon b_promo"></span>PROMOTIONS
+            </a>
+        </li>
+        <li ng-click="addClass()">
+            <a href="/profile" title="">
+                <span class="nav_icon b_my_pro"></span>MY PROFILE
+            </a>
+        </li>
+        <li ng-click="addClass()">
+            <a href="/myorders" title="" class="sec_nav_dd">
+                <span class="nav_icon b_my_ord"></span>MY ORDERS
+                <span class="glyphicon glyphicon-chevron-down pull-right c_lime_green" aria-hidden="true"></span>          
+            </a>
+            <ul class="my_ord_dd">
+                <li ng-repeat="order in orderMenu" ng-class="{ menuActive : orderMenuActive == $index}"><a href="{{order.href}}" title="{{order.orderName}}"  ng-click="orderMenuActtivFn($index)" >{{order.orderName + $index}}</a></li>
+                <!-- <li ng-class="{'active' : orderType == 'pendingOrders'}"><a href="" title="Pending Orders" ></a></li>
+                <li ng-class="{'active' : orderType == 'userOrders'}"><a href="" title="User Orders" ></a></li> -->
+            </ul>
+        </li>
+        <li ng-click="addClass()">
+            <a href="javascript:void(0)" title="">
+                <span class="nav_icon b_my_salon"></span>MY SALONS
+            </a>
+        </li>
+        <li ng-click="addClass()">
+            <a href="javascript:void(0)" title="">
+                <span class="nav_icon b_my_user"></span>MY USERS
+            </a>
+        </li>
+        <li ng-click="addClass()" class="sec_nav_dd1">
+            <a href="javascript:void(0)" title="">
+                <span class="nav_icon b_my_claim"></span>SUBMIT CLAIM
+                <span class="glyphicon glyphicon-chevron-down pull-right c_lime_green" aria-hidden="true"></span>          
+            </a>
+            <ul class="my_ord_dd1">
+                <li><a href="javscript:void(0)" title="">Order Claim</a></li>
+                <li><a href="javscript:void(0)" title="">Non-Order Claim</a></li>
+            </ul>
+        </li>
+        <li ng-click="addClass()">
+            <a href="javascript:void(0)" title="">
+                <span class="nav_icon b_my_client_dislike"></span>CLIENT DISLIKE
+            </a>
+        </li>
+    </ul>
+</div>

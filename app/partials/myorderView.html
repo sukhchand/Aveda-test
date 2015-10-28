@@ -1,0 +1,29 @@
+<!-- myorder View -->
+<div class="myorder_view">
+	<div class="container-fluid myorder_head">
+		<div class="row-fluid">
+			<div>
+				<ul>
+					<li ng-repeat="cat in orderCategory"  ><a href="#" ng-click="select($index)" ng-class="{my_order_active: $index == selected}">{{cat.type}}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid myorder_content">
+		<div class="row-fluid">
+			<div class="content-div">
+				<div class="my_order_filter">
+					<select class="selectpicker">
+						<option>Sort by Month</option>
+						<option>Sort by Week</option>
+						<option>Sort by Year</option>
+					</select>
+				</div>
+
+				<div class="myorder_data">
+					<div class="gridStyle" ng-grid="gridOptions"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

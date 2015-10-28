@@ -1,0 +1,26 @@
+<!-- promotions -->
+<div class="av_accordion_container">  
+  <accordion close-others="oneAtATime" >
+    <accordion-group ng-repeat="group in groups" is-open="status.isItemOpen[$index]" class="av_accordion_tab" ng-class="{'expandend': status.isItemOpen[$index]}">
+        <accordion-heading>
+            {{group.title}} <div class="pull-right" ng-class="{'av_toggle_minus': status.isItemOpen[$index], 'av_toggle_plus': !status.isItemOpen[$index]}"><span ng-class="{'av_toggle_m': status.isItemOpen[$index], 'av_toggle_p': !status.isItemOpen[$index]}"></span></div>
+        </accordion-heading>
+        <div class="av_accordion_cntn">
+        	<div class="av_promo_offer_list row">
+		        <div class="av_promo_offer_list_img col-lg-3"><img src="{{group.product_image}}"></div>
+		        <div class="av_promo_offer_list_txt col-lg-9">
+		        	<h4>{{group.product_heading}}</h4>
+		        	<p>{{group.product_descp}}</p>
+		        	<ul class="av_promo_fe">
+						<li ng-repeat="spec in group.product_spec">{{spec}}</li>
+					</ul>
+		        	<div class="av_promo_offer">{{group.product_discount}}</div>
+					<input type="text" value="0" >
+					<button>ADD TO ORDER</button>
+		        </div>
+        	</div>
+        </div>
+    </accordion-group>
+
+  </accordion>
+</div>

@@ -1,0 +1,67 @@
+<div class="login">
+    <div class="order-cloud-image"></div>
+    <section class="order-cloud">
+        <div id="login_box">
+            <div id="login_form" class="animated bounceIn">
+                <div class="LogoSection col-lg-6 col-xs-12">
+                    <img src="css/images/aveda_logo_white.png">
+                </div>
+                <div class="form_div col-lg-6 col-xs-12">
+                    <form class="form-signin" ng-submit="login()" name="login_form">
+                        <h2 class="animated fadeIn text-center">{{'Login to your account' | r}}</h2>
+                        <div class="login_tab"><a href="#" class="tab_active">LOGIN</a><a href="#">FORGOT PASSWORD</a></div>
+                        <p id="451qa_msg_login" ng-show="loginMessage" ng-bind-html="loginMessage" class="alert alert-info"></p>
+                        <div>
+                            <div class="view-form-icon" ng-show="!showEmailHelp">
+                                <div class="input-group">
+                                    <label ng-show="credentials.Username">{{'User Name' | r}}</label>
+                                    <span class="input-group-addon login_icon" id="basic-addon1"><img src="css/images/user_img.png"></span>
+                                    <span class="input-group-addon login_icon success" ng-hide="true"><img src="css/images/correct.png"></span>
+                                    <span class="input-group-addon login_icon error" ng-hide="true"><img src="css/images/incorrect.png"></span>
+                                    <input autofocus class="form-control" type="text" ng-model="credentials.Username" placeholder="{{'Username' | r}}" aria-describedby="basic-addon1" />
+                                    <!-- <i class="fa fa-user"></i> -->
+                                </div>
+                                <div ng-show="!PasswordSecurityException" class="input-group">
+                                    <label ng-show="credentials.Password">{{'Password' | r}}</label>
+                                    <span class="input-group-addon login_icon" id="basic-addon2"><img src="css/images/password_img.png"></span>
+                                    <span class="input-group-addon login_icon" id="correct" ng-hide="true"><img src="css/images/correct.png"></span>
+                                    <span class="input-group-addon login_icon" id="incorrect" ng-hide="true"><img src="css/images/incorrect.png"></span>
+                                    <input class="form-control" type="password" ng-model="credentials.Password" placeholder="{{'Password' | r}}"  aria-describedby="basic-addon2" />
+                                    
+                                </div>
+                            </div>
+                            <div>                                
+                                <div class="view-form-icon" ng-show="showEmailHelp">
+                                    <div class="input-group">
+                                        <label ng-show="credentials.Email">{{'Email' | r}}</label>
+                                        <span class="input-group-addon login_icon" id="basic-addon3"><img src="css/images/forgot.png"></span>
+                                        <input class="form-control" type="email" ng-model="credentials.Email" placeholder="{{'Email' | r}}" aria-describedby="basic-addon3" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="view-form-icon" ng-show="PasswordSecurityException">
+                                    <h2 class="animated fadeIn text-center">{{'Reset your password?' | r}}</h2>
+                                    <div class="input-group">
+                                        <label ng-show="credentials.NewPassword">New {{'Password' | r}}</label>
+                                        <span class="input-group-addon login_icon" id="basic-addon4"><img src="css/images/password_img.png"></span>
+                                        <input class="form-control" name="new_password" type="password" ng-model="credentials.NewPassword" placeholder="New {{'Password' | r}}" aria-describedby="basic-addon4" />
+                                    </div>
+                                    <div class="input-group">
+                                        <label ng-show="credentials.ConfirmPassword">Confirm {{'Password' | r}}</label>
+                                        <span class="input-group-addon login_icon" id="basic-addon5">*</span>
+                                        <input class="form-control" name="confirm_password" type="password" ng-model="credentials.ConfirmPassword"  placeholder="Confirm {{'Password' | r}}" ng-match="credentials.NewPassword" aria-describedby="basic-addon5" />
+                                        <i class="fa fa-lock"></i>
+                                        <inlineerror ng-show="login_form.confirm_password.$error.match" title="{{'Password' | r}} do not match!" />
+                                    </div>
+                                </div>
+                            </div>
+                            <input ng-disabled="login_form.$invalid" class="btn btn-large btn-primary btn-block login_btn" id="451_btn_login" type="submit" value="{{buttonText}}" />
+                        </div>
+                        <a href="#" ng-show="!showEmailHelp && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">Forgot Password?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

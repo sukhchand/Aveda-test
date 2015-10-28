@@ -1,0 +1,96 @@
+<div class="my_profile_cont row">
+	<div class="my_profile_left col-lg-6">
+		<div class="av_profile_tab">
+			<div class="av_profile_tab_hd">
+				PERSONAL INFORMATION 
+				<button class="av_profile_btn  btn_edit pull-right">EDIT </button>
+			</div>
+			<div class="av_personal_info">
+				<div class="av_prs_row row">
+					<div class="av_prs_hd col-lg-4">Email Address:</div>
+					<div class="av_prs_ctn col-lg-8">JuliaSosa@email.com</div>
+				</div>
+				<div class="av_prs_row row">
+					<div class="av_prs_hd col-lg-4">First Name:</div>
+					<div class="col-lg-8">Julia</div>
+				</div>
+				<div class="av_prs_row row">
+					<div class="av_prs_hd col-lg-4">Last Name:</div>
+					<div class="av_prs_ctn col-lg-8">Sosa</div>
+				</div>
+				<div class="av_prs_row row">
+					<div class="av_prs_hd col-lg-4">Street Address:</div>
+					<div class="av_prs_ctn col-lg-8"><p><strong>Julia Sosa</strong></p>
+						<p>330 Cypress Ave N</p>
+						<p>Minneapolis, MN 55414</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="av_profile_tab">
+			<div class="av_profile_tab_hd">
+				PASSWORD
+			<button class="av_profile_btn btn_pwd pull-right">CHANGE PASSWORD </button>
+			</div>
+			<div class="av_prs_pwd">**********</div>
+		</div>
+		<div class="av_profile_tab">
+			<div class="av_profile_tab_hd">
+				SUBSCRIPTIONS
+			</div>
+			<div class="av_subsrp">
+				<div class="av_subsrp_row row">
+					<div class="col-lg-2"><strong>On</strong></div>
+					<div class="col-lg-2"><strong>Off</strong></div>
+					<div class="col-lg-8"><strong>Subscription Type</strong></div>
+				</div>
+				<div class="av_subsrp_row row">
+					<div class="col-lg-2 green_radio"><input type="radio" name="prd_promo" checked><label></label></div>
+					<div class="col-lg-2 green_radio"><input type="radio" name="prd_promo" ><label></label></div>
+					<div class="col-lg-8">Product Promotion Email</div>
+				</div>
+				<div class="av_subsrp_row row">
+					<div class="col-lg-2 green_radio"><input type="radio" name="sdp" checked><label></label></div>
+					<div class="col-lg-2 green_radio"><input type="radio" name="sdp" ><label></label></div>
+					<div class="col-lg-8">SDP Email</div>
+				</div>
+				<div class="av_subsrp_row row">
+					<div class="col-lg-2 green_radio"><input type="radio" name="new_prod" checked><label></label></div>
+					<div class="col-lg-2 green_radio"><input type="radio" name="new_prod"><label></label></div>
+					<div class="col-lg-8">New Product Email</div>
+				</div>
+				<div class="av_subsrp_row row">
+					<div class="col-lg-2 green_radio"><input type="radio" name="av_market" checked><label></label></div>
+					<div class="col-lg-2 green_radio"><input type="radio" name="av_market"><label></label></div>
+					<div class="col-lg-8">Aveda Marketing Email</div>
+				</div>
+				<button class="av_btn">SAVE</button>
+			</div>
+		</div>
+	</div>
+	<div class="my_profile_right col-lg-6">
+		<div class="av_payment">
+			PAYMENT OPTIONS <span class="pull-right av_pay_cart">ADD CARD <img src="css/images/prodPurchase.png" alt="credit card option"></span>
+		</div>
+
+  <accordion close-others="oneAtATime" >
+    <accordion-group ng-repeat="group in groups" is-open="status.isItemOpen[$index]" class="av_accordion_tab av_pay_cc">
+        <accordion-heading>
+            {{group.title}} <div class="pull-right" ng-class="{'av_toggle_minus': status.isItemOpen[$index], 'av_toggle_plus': !status.isItemOpen[$index]}"><span ng-class="{'av_toggle_m': status.isItemOpen[$index], 'av_toggle_p': !status.isItemOpen[$index]}"></span></div>
+        </accordion-heading>
+<!--		 content goes here -->
+        <div class="row av_pay_add">
+			<div class="col-lg-5 col-md-5 lf"><h6>{{group.NameOnCard}}</h6>
+			<p>{{group.Name}}</p></div>
+			<div class="col-lg-7 col-md-7 rg"><h6>{{group.BillAdd}}</h6>
+			<p><strong>{{group.Name}}</strong></p>
+			<p>{{group.add1}}</p>
+			<p>{{group.add2}}</p></div>
+        </div>
+		<button class="av_profile_btn btn_del pull-right">DELETE</button><button class="av_profile_btn  btn_edit pull-right">EDIT</button>
+    </accordion-group>
+
+  </accordion>
+
+	</div>
+</div>

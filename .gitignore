@@ -1,0 +1,22 @@
+.idea
+logs/*
+!.gitkeep
+config/Four51APIAppName.js
+*source.js
+*resources.js
+*source.css
+.orig
+node_modules/*
+*source.js
+*resources.js
+*source.css
+<<<<<<< HEAD
+app/partials/controls/left_nav.html
+=======
+app/js/app.js
+app/js/451.js
+app/.htaccess
+app/js/451.js
+app/js/app.js
+>>>>>>> origin/master
+app/js/controllers/promotionsController.js
